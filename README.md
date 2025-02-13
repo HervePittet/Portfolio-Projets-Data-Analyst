@@ -52,15 +52,17 @@ Pour la partie analytique, nous réaliserons une ACP avec réductions des dimens
 * La pratique et la maîtrise concrète d'un outil de data visualisation.
 
 ### &#128203; Scénario
-Nous sommes consultant data analyst en mission dans l’**ONG DWFA (Drinking Water For All)** ; elle a pour ambition de donner accès à l’eau potable à tout le monde.
+Nous sommes consultant data analyst en mission dans l’**ONG DWFA (Drinking Water For All)** ; elle a pour ambition de donner accès à l’eau potable à tout le monde.  
 DWFA présente 3 domaines d’expertise :
-* Création de services d’accès à l’eau potable
-* Modernisation de services d’accès à l’eau déjà existants
-* Consulting auprès d’administrations/gouvernements à propos des politiques d’accès à l’eau
-L’association a effectué une demande de financement auprès d’un bailleur de fonds en présentant ces 3 domaines d’expertise. 
+* Création de services d’accès à l’eau potable.
+* Modernisation de services d’accès à l’eau déjà existants.
+* Consulting auprès d’administrations/gouvernements à propos des politiques d’accès à l’eau.  
+
+L’association a effectué une demande de financement auprès d’un bailleur de fonds en présentant ces 3 domaines d’expertise.   
 Notre mission sera de concervoir d’un tableau de bord pour : 
 * identifier les pays qui rencontrent des difficultés d’accès à l’eau potable ;
 * identifier ceux pour lesquels concentrer nos efforts.
+
 Pour ça, il faudra représenter des indicateurs relatifs à nos 3 domaines d'expertise. 
 
 ### &#127919; Objectifs
