@@ -2,24 +2,24 @@
 
 Ce dépôt contient les projets réalisés dans le cadre de mon parcours de formation en tant que *[Data Analyst](https://openclassrooms.com/fr/paths/324-data-analyst)* dispensé par OpenClassrooms.
 ## &#128295; Outils utilisés
-|                   |Projet 10 |Projet 9 |Projet 8 |Projet 7 |Projet 6 |Projet 5 |Projet 4 |Projet 3 |Projet 2 |
-|:-----------------:|:--------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-|Python             |&#10003;  |         |         |         |         |         |         |         |         |
-|Jupyter            |          |         |         |         |         |         |         |         |         |
-|Pandas             |          |         |         |         |         |         |         |         |         |
-|Numpy              |          |         |         |         |         |         |         |         |         |
-|Matplotlib         |          |         |         |         |         |         |         |         |         |
-|Seaborn            |          |         |         |         |         |         |         |         |         |
-|Plotly             |          |         |         |         |         |         |         |         |         |
-|Scipy              |          |         |         |         |         |         |         |         |         |
-|Sklearn            |          |         |         |         |         |         |         |         |         |
-|Power BI           |          |         |         |         |         |         |         |         |         |
-|Power Query        |          |         |         |         |         |         |         |         |         |
-|Knime              |          |         |         |         |         |         |         |         |         |
-|SQLite             |          |         |         |         |         |         |         |         |         |
-|SQL Power Architect|          |         |         |         |         |         |         |         |         |
-|Power Point        |          |         |         |         |         |         |         |         |         |
-|Excel              |          |         |         |         |         |         |         |         |         |
+|                   |Projet 12 |Projet 11 |Projet 10 |Projet 9 |Projet 8 |Projet 7 |Projet 6 |Projet 5 |Projet 4 |Projet 3 |Projet 2 |
+|:-----------------:|:--------:|:--------:|:--------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+|Python             |&#10003;  |          |          |         |         |         |         |         |         |         |         |
+|Jupyter            |          |          |          |         |         |         |         |         |         |         |         |
+|Pandas             |          |          |          |         |         |         |         |         |         |         |         |
+|Numpy              |          |          |          |         |         |         |         |         |         |         |         |
+|Matplotlib         |          |          |          |         |         |         |         |         |         |         |         |
+|Seaborn            |          |          |          |         |         |         |         |         |         |         |         |
+|Plotly             |          |          |          |         |         |         |         |         |         |         |         |
+|Scipy              |          |          |          |         |         |         |         |         |         |         |         |
+|Sklearn            |          |          |          |         |         |         |         |         |         |         |         |
+|Power BI           |          |          |          |         |         |         |         |         |         |         |         |
+|Power Query        |          |          |          |         |         |         |         |         |         |         |         |
+|Knime              |          |          |          |         |         |         |         |         |         |         |         |
+|SQLite             |          |          |          |         |         |         |         |         |         |         |         |
+|SQL Power Architect|          |          |          |         |         |         |         |         |         |         |         |
+|Power Point        |          |          |          |         |         |         |         |         |         |         |         |
+|Excel              |          |          |          |         |         |         |         |         |         |         |         |
 
 ## [Projet 11 : Produisez une étude de marché avec Python](./Etude_de_marché/)
 
