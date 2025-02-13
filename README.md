@@ -59,7 +59,7 @@ DWFA présente 3 domaines d’expertise :
 * Consulting auprès d’administrations/gouvernements à propos des politiques d’accès à l’eau.  
 
 L’association a effectué une demande de financement auprès d’un bailleur de fonds en présentant ces 3 domaines d’expertise.   
-Notre mission sera de concervoir d’un tableau de bord pour : 
+Notre mission sera de concervoir un tableau de bord pour : 
 * identifier les pays qui rencontrent des difficultés d’accès à l’eau potable ;
 * identifier ceux pour lesquels concentrer nos efforts.
 
