@@ -41,3 +41,30 @@ Pour la partie analytique, nous réaliserons une ACP avec réductions des dimens
 * Réaliser des analyses multivariées pour comprendre la corrélation entre les variables.
 * Réduire la dimension du jeu de données pour optimiser le temps d'apprentissage des modèles.
 * Sélectionner les variables pertinentes d'un modèle d'apprentissage.
+
+## [Projet 10 : Faîtes une étude sur l'eau potable avec Power BI](./Etude_eau_potable/)
+
+### &#127891; Compétences acquises
+* La prise en compte des enjeux contextuels / de la démarche de datavisualisation.
+* La recherche de données pertinentes.
+* Le prétraitement et la manipulation des données avec un outil adapté.
+* Les bonnes pratiques en termes de data visualisation / data storytelling.
+* La pratique et la maîtrise concrète d'un outil de data visualisation.
+
+### &#128203; Scénario
+Nous sommes consultant data analyst en mission dans l’**ONG DWFA (Drinking Water For All)** ; elle a pour ambition de donner accès à l’eau potable à tout le monde.
+DWFA présente 3 domaines d’expertise :
+* Création de services d’accès à l’eau potable
+* Modernisation de services d’accès à l’eau déjà existants
+* Consulting auprès d’administrations/gouvernements à propos des politiques d’accès à l’eau
+L’association a effectué une demande de financement auprès d’un bailleur de fonds en présentant ces 3 domaines d’expertise. 
+Notre mission sera de concervoir d’un tableau de bord pour : 
+* identifier les pays qui rencontrent des difficultés d’accès à l’eau potable ;
+* identifier ceux pour lesquels concentrer nos efforts.
+Pour ça, il faudra représenter des indicateurs relatifs à nos 3 domaines d'expertise. 
+
+### &#127919; Objectifs
+* Proposer un récit des résultats dynamique pour engager un public.
+* Optimiser une solution de visualisation accessible, adaptée au public et au type de donnée.
+* Créer un tableau de bord interactif pour rendre la visualisation disponible et accessible.
+
