@@ -32,8 +32,8 @@ Ce dépôt contient les projets réalisés dans le cadre de mon parcours de form
 
 ### &#128203; Scénario
 Nous sommes en poste chez **La poule qui chante**, une entreprise française d’agroalimentaire. Son activité principale est l’élevage et la vente de poulets sous le label “Poulet Agriculture Biologique”. 
-Son activité actuelle est franco-française mais Patrick, le PDG de l’entreprise souhaite évaluer la possibilité de se développer à l'international.
-Notre mission sera de proposer une analyse des groupements de pays que l’on peut cibler pour exporter les poulets. Nous approfondirons ensuite l'étude de marché.
+Son activité actuelle est franco-française mais Patrick, le PDG de l’entreprise souhaite évaluer la possibilité de se développer à l'international.  
+Notre mission sera de proposer une analyse des groupements de pays que l’on peut cibler pour exporter les poulets. Nous approfondirons ensuite l'étude de marché.  
 Pour la partie analytique, nous réaliserons une ACP avec réductions des dimensions et un clustering (dans un notebook séparé de l’exploration des données).
 
 ### &#127919; Objectifs
