@@ -117,7 +117,7 @@ Nous nous baserons sur les données issues du SIRH non anonymisées. Il faudra l
 * Collecter des données pertinentes en respect des normes et bonnes pratiques.
 * Vérifier la cohérence et la fiabilité des données préparées.
 
-## [Projet 7 : Créez un tableau de bord dynamique avec Power BI pour visualiser l'avancement de projets](./Analyser_tableau_de_bord_avancement_projets/)
+## [Projet 7 : Créez un tableau de bord dynamique avec Power BI pour visualiser l'avancement de projets](./Creer_tableau_de_bord_avancement_projets/)
 
 ### &#127891; Compétences acquises
 * Identifier les enjeux du client.
