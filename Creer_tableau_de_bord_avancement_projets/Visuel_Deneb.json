@@ -1,0 +1,1279 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "",
+  "width": 495,
+  "height": 420,
+  "background": "transparent",
+  "autosize": "none",
+  "padding": {
+    "left": 0,
+    "right": 0,
+    "top": 0,
+    "bottom": 0
+  },
+  "data": [
+    {
+      "name": "dataset"
+        },
+    {
+      "name": "input",
+      "source": "dataset",
+      "transform": [
+        {
+          "type": "formula",
+          "as": "progression",
+          "expr": "round((datum.actual_deliverables / datum.planned_deliverables) * 100)"
+        },
+        {
+          "type": "formula",
+          "as": "delta_deliverables",
+          "expr": "datum.planned_deliverables - datum.actual_deliverables"
+        },
+        {
+            "type": "formula",
+            "as": "delta_cost",
+            "expr": "datum.actual_cost - datum.planned_cost"
+        },
+        {
+            "type": "formula",
+            "as": "delta_duration",
+            "expr": "datum.actual_duration - datum.planned_duration"
+        },
+        {
+          "type": "formula",
+          "as": "actual_days_per_deliverable",
+          "expr": "round((datum.actual_duration / datum.actual_deliverables) * 100) / 100"
+        },
+        {
+          "type": "formula",
+          "as": "alert_progression",
+          "expr": "datum.delta_duration < 0 ? datum.progression <= 85 ? (datum.actual_days_per_deliverable * datum.delta_deliverables) > datum.delta_duration ? 1:0:0:0"
+        },
+        {
+          "type": "formula",
+          "as": "alert_cost",
+          "expr": "datum.delta_cost > 0 ? (datum.delta_cost / datum.planned_cost) >= 0.15 ? 1:0:0"
+        },
+        {
+          "type": "formula",
+          "as": "alert_duration",
+          "expr": "datum.delta_duration > 0 ? (datum.delta_duration / datum.planned_duration) >= 0.15 ? 1:0:0"
+        },
+        {
+          "type": "formula",
+          "as": "alerts",
+          "expr": "datum.alert_progression + datum.alert_cost + datum.alert_duration"
+        },
+        {
+          "type": "formula",
+          "as": "start_date",
+          "expr": "utc(year(datum.start_date), month(datum.start_date), date(datum.start_date))"
+        }
+      ]
+    },
+    {
+      "name": "projets",
+      "source": "input",
+      "transform": [
+        {
+          "type": "aggregate",
+          "fields": [
+            "phase",
+            "planned_deliverables",
+            "actual_deliverables",
+            "planned_cost",
+            "actual_cost",
+            "planned_duration",
+            "actual_duration",
+            "progression",
+            "delta_deliverables",
+            "delta_cost",
+            "delta_duration",
+            "start_date",
+            "type"
+          ],
+          "ops": [
+            "count",
+            "sum",
+            "sum",
+            "sum",
+            "sum",
+            "sum",
+            "sum",
+            "mean",
+            "sum",
+            "sum",
+            "sum",
+            "min",
+            "min"
+          ],
+          "as": [
+            "phases_nb",
+            "planned_deliverables",
+            "actual_deliverables",
+            "planned_cost",
+            "actual_cost",
+            "planned_duration",
+            "actual_duration",
+            "progression",
+            "delta_deliverables",
+            "delta_cost",
+            "delta_duration",
+            "start_date",
+            "type"
+          ],
+          "groupby": ["projet"]
+        },
+        {
+          "type": "formula",
+          "as": "alert_cost",
+          "expr": "datum.delta_cost > 0 ? (datum.delta_cost / datum.planned_cost) >= 0.15 ? 1:0:0" 
+        },
+        {
+          "type": "formula",
+          "as": "alert_duration",
+          "expr": "datum.delta_duration > 0 ? (datum.delta_duration / datum.planned_duration) >= 0.15 ? 1:0:0" 
+        },
+        {
+          "type": "formula",
+          "as": "alert_deliverables",
+          "expr": "(datum.actual_deliverables / datum.planned_deliverables) <= 0.85 ? datum.delta_duration <= 0 ? (datum.delta_deliverables * (datum.actual_duration / datum.actual_deliverables)) > abs(datum.delta_duration) ? 1:0:0:0"
+        },
+        {
+          "type": "formula",
+          "as": "alerts",
+          "expr": "datum.progression == 100 ? 0:datum.alert_deliverables + datum.alert_cost + datum.alert_duration"
+        },
+        {
+          "type": "formula",
+          "as": "percent_cost",
+          "expr": "round((datum.actual_cost/datum.planned_cost)*10000)/100"
+        },
+        {
+          "type": "formula",
+          "as": "percent_duration",
+          "expr": "round((datum.actual_duration/datum.planned_duration)*10000)/100"
+        }
+      ]
+    },
+    {
+      "name": "phases",
+      "source": "input",
+      "transform": [
+        {
+          "type": "formula",
+          "as": "phase_title",
+          "expr": "split(datum.phase, ' - ')[1]"
+        },
+        {
+          "type": "formula",
+          "as": "phase_id",
+          "expr": "slice(split(datum.phase, ' - ')[0], 6)"
+        },
+        {
+          "type": "window",
+          "sort": {
+            "field": ["phase_id"],
+            "order": ["ascending"]
+          },
+          "ops": ["rank"],
+          "as": ["phase_no"],
+          "groupby": ["projet"]
+        },
+        {
+          "type": "lookup",
+          "from": "projets",
+          "key": "projet",
+          "values": [
+            "phases_nb",
+            "progression",
+            "planned_deliverables",
+            "actual_deliverables",
+            "planned_cost",
+            "actual_cost",
+            "planned_duration",
+            "actual_duration",
+            "alerts"
+          ],
+          "fields": ["projet"],
+          "as": [
+            "phases_nb",
+            "projet_progression",
+            "projet_planned_deliverables",
+            "projet_actual_deliverables",
+            "projet_planned_cost",
+            "projet_actual_cost",
+            "projet_planned_duration",
+            "projet_actual_duration",
+            "projet_alerts"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "maxPhases",
+      "source": "phases",
+      "transform": [
+        {
+          "type": "aggregate",
+          "fields": ["phases_nb"],
+          "ops": ["max"],
+          "as": ["max"]
+        }
+      ]
+    },
+    {
+      "name": "projets_encours",
+      "source": "projets",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.progression != 100"
+        }
+      ]
+    },
+    {
+      "name": "projets_enalerte",
+      "source": "projets",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.alerts > 0"
+        }
+      ]
+    },
+    {
+      "name": "projets_termines",
+      "source": "projets",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.progression == 100"
+        }
+      ]
+    },
+    {
+      "name": "phases_encours",
+      "source": "phases",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.projet_progression != 100"
+        }
+      ]
+    },
+    {
+      "name": "phases_enretard",
+      "source": "phases",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.projet_alerts > 0"
+        }
+      ]
+    },
+    {
+      "name": "phases_completes",
+      "source": "phases",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "datum.projet_progression == 100"
+        }
+      ]
+    },
+    {
+      "name": "filteredProjets",
+      "on": [
+        {
+          "trigger": "clickTous",
+          "remove": true
+        },
+        {
+          "trigger": "clickTous",
+          "insert": "data('projets')"
+        },
+        {
+          "trigger": "clickEnCours",
+          "remove": true
+        },
+        {
+          "trigger": "clickEnCours",
+          "insert": "data('projets_encours')"
+        },
+        {
+          "trigger": "clickEnAlerte",
+          "remove": true
+        },
+        {
+          "trigger": "clickEnAlerte",
+          "insert": "data('projets_enalerte')"
+        },
+        {
+          "trigger": "clickTermines",
+          "remove": true
+        },
+        {
+          "trigger": "clickTermines",
+          "insert": "data('projets_termines')"
+        }
+      ]
+    },
+    {
+      "name": "filteredPhases",
+      "on": [
+        {
+          "trigger": "clickTous",
+          "remove": true
+        },
+        {
+          "trigger": "clickTous",
+          "insert": "data('phases')"
+        },
+        {
+          "trigger": "clickEnCours",
+          "remove": true
+        },
+        {
+          "trigger": "clickEnCours",
+          "insert": "data('phases_encours')"
+        },
+        {
+          "trigger": "clickEnAlerte",
+          "remove": true
+        },
+        {
+          "trigger": "clickEnAlerte",
+          "insert": "data('phases_enretard')"
+        },
+        {
+          "trigger": "clickTermines",
+          "remove": true
+        },
+        {
+          "trigger": "clickTermines",
+          "insert": "data('phases_completes')"
+        }
+      ]
+    },
+    {
+      "name": "buttons",
+      "values": [
+        {
+          "side": "left",
+          "text": "Tous",
+          "x": 15,
+          "width": 65
+        },
+        {
+          "side": "left",
+          "text": "En cours",
+          "x": 83,
+          "width": 82
+        },
+        {
+          "side": "left",
+          "text": "En alerte",
+          "x": 168,
+          "width": 82
+        },
+        {
+          "side": "left",
+          "text": "Terminés",
+          "x": 253,
+          "width": 88
+        }
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "name": "width",
+      "update": "495"
+    },
+    {
+      "name": "height",
+      "update": "420"
+    },
+    {
+      "name": "showButtons",
+      "value": true
+    },
+    {
+      "name": "showTooltips",
+      "value": true
+    },
+    {
+      "name": "textColour",
+      "value": "#000000"
+    },
+    {
+      "name": "sanitoralGreen",
+      "value": "#2A9389"
+    },
+    {
+      "name": "backCl",
+      "value": "#eef3ef"
+    },
+    {
+      "name": "orangeCl",
+      "value": "#e97340"
+    },
+    {
+      "name": "greenCl",
+      "value": "#2A9389"
+    },
+    {
+      "name": "redCl",
+      "value": "#f86a57"
+    },
+    {
+      "name": "buttonRadius",
+      "value": 12
+    },
+    {
+      "name": "headerHeight",
+      "value": 120
+    },
+    {
+      "name": "itemBackColour",
+      "value": "#f9f9f9"
+    },
+    {
+      "name": "itemStrokeColour",
+      "value": "#ffffff"
+    },
+    {
+      "name": "itemStrokeWidth",
+      "value": 1
+    },
+    {
+      "name": "itemWidth",
+      "update": "width - dxWidth * 3"
+    },
+    {
+      "name": "itemHeight",
+      "value": 62
+    },
+    {
+      "name": "itemRadius",
+      "value": 20
+    },
+    {
+      "name": "nullBackColour",
+      "value": "#d9d9d9"
+    },
+    {
+      "name": "dxWidth",
+      "value": 15
+    },
+    {
+      "name": "dxPhases",
+      "value": 9
+    },
+    {
+      "name": "capsuleWidth",
+      "value": 7
+    },
+    {
+      "name": "capsuleHeight",
+      "value": 15
+    },
+    {
+      "name": "maxPhases",
+      "update": "data('maxPhases')[0]['max']"
+    },
+    {
+      "name": "totalProjectsNb",
+      "update": "data('projets').length"
+    },
+    {
+      "name": "currentProjectsNb",
+      "update": "data('filteredProjets').length"
+    },
+    {
+      "name": "numberWidth",
+      "update": "itemWidth * 0.09"
+    },
+    {
+      "name": "progressionWidth",
+      "update": "itemWidth * 0.16"
+    },
+    {
+      "name": "costWidth",
+      "update": "itemWidth * 0.25"
+    },
+    {
+      "name": "durationWidth",
+      "update": "itemWidth * 0.25"
+    },
+    {
+      "name": "phasesWidth",
+      "update": "itemWidth - dxWidth * 2 - numberWidth - progressionWidth - costWidth - durationWidth"
+    },
+    {
+      "name": "bandPadding",
+      "value": 10
+    },
+    {
+      "name": "bandHeight",
+      "value": 15
+    },
+    {
+      "name": "bandRadius",
+      "value": 3
+    },
+    {
+      "name": "hover",
+      "value": "",
+      "on": [
+        {
+          "events": "@buttonsHolder:pointerover",
+          "update": "datum.text ? datum.text:''",
+          "force": true
+        },
+        {
+          "events": "@buttonsHolder:pointerout",
+          "update": "''",
+          "force": true
+        }
+      ]
+    },
+    {
+      "name": "clickTous",
+      "value": true,
+      "on": [
+        {
+          "events": "@buttonsHolder:click",
+          "update": "datum.text == 'Tous' ? true:false",
+          "force": true
+        }
+      ]
+    },
+    {
+      "name": "clickEnCours",
+      "value": false,
+      "on": [
+        {
+          "events": "@buttonsHolder:click",
+          "update": "datum.text == 'En cours' ? true:false",
+          "force": true
+        }
+      ]
+    },
+    {
+      "name": "clickEnAlerte",
+      "value": false,
+      "on": [
+        {
+          "events": "@buttonsHolder:click",
+          "update": "datum.text == 'En alerte' ? true:false",
+          "force": true
+        }
+      ]
+    },
+    {
+      "name": "clickTermines",
+      "value": false,
+      "on": [
+        {
+          "events": "@buttonsHolder:click",
+          "update": "datum.text == 'Terminés' ? true:false",
+          "force": true
+        }
+      ]
+    },
+    {
+      "name": "rowHeight",
+      "update": "itemHeight + 10"
+    },
+    {
+      "name": "scaledHeight",
+      "update": "data('filteredProjets').length * rowHeight"
+    },
+    {
+      "name": "scrollAreaHeight",
+      "update": "height - headerHeight"
+    },
+    {
+      "name": "scrollBarWidth",
+      "value": 5
+    },
+    {
+      "name": "scrollBarHeight",
+      "update": "clamp(scrollAreaHeight / length(data('filteredProjets')), 30, scrollAreaHeight)"
+    },
+    {
+      "name": "scrollPositionMax",
+      "update": "length(data('filteredProjets'))"
+    },
+    {
+      "name": "scrollBarMouseDragY",
+      "value": "0",
+      "on": [
+        {
+          "events": "[@scrollbar:pointerdown, window:pointerup] > window:pointermove",
+          "update": "clamp(y(), 1, scrollAreaHeight + 50)"
+        }
+      ]
+    },
+    {
+      "name": "scrollPosition",
+      "value": 1,
+      "on": [
+        {
+          "events": {
+            "type": "wheel",
+            "consume": true
+          },
+          "update": "clamp(scrollPosition * pow(1.001, event.deltaY), 1, scrollPositionMax)"
+        },
+        {
+          "events": "window:keydown",
+          "update": "event.code == 'Home' ? 1:event.code == 'End' ? scrollPositionMax:scrollPosition"
+        },
+        {
+          "events": "window:keydown",
+          "update": "clamp(event.code == 'PageDown' ? (scrollPosition + 10):event.code == 'PageUp' ? (scrollPosition - 10):scrollPosition, 1, scrollPositionMax)"
+        },
+        {
+          "events": "window:keydown",
+          "update": "clamp(event.code == 'ArrowDown' ? (scrollPosition + 1):event.code == 'ArrowUp' ? (scrollPosition - 1):scrollPosition, 1, scrollPositionMax)"
+        },
+        {
+          "events": "[@scrollbar:pointerdown, window:pointerup] > window:pointermove",
+          "update": "clamp(round(invert('scaleScrollBarY', scrollBarMouseDragY), 0), 1, scrollPositionMax)"
+        }
+      ]
+    },
+        {
+      "name": "yRange",
+      "update": "[yRange != null ? yRange[0]:0, yRange != null ? yRange[0]+scaledHeight:scaledHeight]",
+      "on": [
+        {
+          "events": [{"signal": "scrollPosition"}, {"signal": "scrollPositionMax"}],
+          "update": "clampRange([-((scrollPosition - 1) * rowHeight), scaledHeight - ((scrollPosition - 1) * rowHeight)], height >= scaledHeight ? 0:height - scaledHeight- bandPadding*14, height >= scaledHeight ? height:scaledHeight)"
+        }
+      ]
+    }
+  ],
+    "marks": [
+    {
+      "name": "title",
+      "type": "text",
+      "encode": {
+        "update": {
+          "align": {"value": "left"},
+          "x": {"signal": "dxWidth"},
+          "y": {"signal": "dxWidth * 2"},
+          "text": {"value": "Projets"},
+          "fontWeight": {"value": "400"},
+          "fontSize": {"value": 24}
+        }
+      }
+    },
+    {
+      "type": "text",
+      "encode": {
+        "update": {
+          "align": {"value": "right"},
+          "x": {"signal": "width - dxWidth * 5"},
+          "y": {"signal": "headerHeight / 2"},
+          "baseline": {"value": "bottom"},
+          "text": {"signal": "currentProjectsNb"},
+          "fontWeight": {"value": "500"},
+          "fontSize": {"value": 30}
+        }
+      }
+    },
+    {
+      "type": "text",
+      "encode": {
+        "update": {
+          "align": {"value": "right"},
+          "x": {"signal": "width - dxWidth"},
+          "y": {"signal": "headerHeight / 2"},
+          "baseline": {"value": "bottom"},
+          "text": {"signal": "'/' + totalProjectsNb"},
+          "fontWeight": {"value": "300"},
+          "fontSize": {"value": 24}
+        }
+      }
+    },
+    {
+      "type": "text",
+      "encode": {
+        "update": {
+          "align": {"value": "right"},
+          "x": {"signal": "width - dxWidth"},
+          "y": {"signal": "headerHeight / 2"},
+          "baseline": {"value": "top"},
+          "text": {"value": "projets"},
+          "fontWeight": {"value": "300"},
+          "fontSize": {"value": 16}
+        }
+      }
+    },
+    {
+      "name": "buttonsHolder",
+      "type": "group",
+      "from": {"data": "buttons"},
+      "clip": {"signal": "!showButtons"},
+      "encode": {
+        "update": {
+          "x": {"signal": "datum.side == 'left' ? datum.x:width - datum.x"},
+          "y": {"value": 71},
+          "width": {"signal": "datum.width"},
+          "height": {"value": 35},
+          "stroke": {"value": "black"},
+          "strokeWidth": {"value": 1},
+          "cornerRadius": {"signal": "buttonRadius"},
+          "strokeOpacity": [
+            {
+              "test": "indexof(hover, datum.text) > -1",
+              "value": 1
+            },
+            {
+              "test": "datum.text == 'Tous' && clickTous",
+              "value": 1
+            },
+            {
+              "test": "datum.text == 'En cours' && clickEnCours",
+              "value": 1
+            },
+            {
+              "test": "datum.text == 'En alerte' && clickEnAlerte",
+              "value": 1
+            },
+            {
+              "test": "datum.text == 'Terminés' && clickTermines",
+              "value": 1
+            },
+            {"value": 0.2}
+          ],
+          "cursor": {"value": "pointer"},
+          "fill": [
+            {
+              "test": "indexof(hover, datum.text) > -1",
+              "signal": "orangeCl"
+            },
+            {"signal": "backCl"}
+          ] ,
+      "tooltip": [
+        {
+          "test": "datum.text == 'Tous'",
+          "value": "Affiche tous les projets"
+        },
+        {
+          "test": "datum.text == 'En cours'",
+          "value": "Affiche les projets pour lesquels au moins 1 phase n'est pas terminée, à savoir qu'il reste des livrables à établir"
+        },
+        {
+          "test": "datum.text == 'En alerte'",
+          "value": "Affiche les projets en alerte, à savoir que :\n le projet n'est pas terminé et qu'au niveau du projet, une des conditions suivantes soit remplie :\n - coûts actuels + 15 % par rapport coûts planifiés\n - durée actuelle + 15 % par rapport durée planifiée\n - livrables actuels + 15% par rapport livrables planifiés + durée pour livrables à établir < durée disponible"
+        },
+        {
+          "test": "datum.text == 'Terminés'",
+          "value": "Affiche les projets pour lesquels toutes les phases sont terminées, à savoir que tous les livrables ont été établis"
+        }
+      ]
+        }
+      },
+      "marks": [
+        {
+          "name": "buttonText",
+          "interactive": false,
+          "type": "text",
+          "encode": {
+            "update": {
+              "text": {"signal": "parent.text"},
+              "baseline": {"value": "middle"},
+              "align": {"value": "center"},
+              "x": {"signal": "item.mark.group.width / 2"},
+              "y": {"signal": "item.mark.group.height / 2"},
+              "fill": [
+                {"signal": "textColour"}
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "scrollbar",
+      "type": "rect",
+      "encode": {
+        "update": {
+          "x": {"signal": "width - 2 * scrollBarWidth"},
+          "y": {"scale": "scaleScrollBarY", "signal": "scrollPosition"},
+          "width": {"signal": "scrollBarWidth"},
+          "height": {"signal": "scrollBarHeight"},
+          "fill": {"signal": "nullBackColour"},
+          "cornerRadius": {"value": 3}
+        }
+      }
+    },
+    {
+      "name": "projetHolder",
+      "type": "group",
+      "style": "cell",
+      "layout": {
+        "bounds": "flush",
+        "align": "each"
+      },
+      "encode": {
+        "enter": {
+          "x": {"signal": "dxWidth"},
+          "y": {"signal": "headerHeight"},
+          "stroke": {"value": "transparent"},
+          "width": {"signal": "itemWidth + dxWidth"},
+          "height": {"signal": "height - headerHeight - dxWidth"},
+          "cornerRadiusBottomLeft": {"value": 20},
+          "cornerRadiusBottomRight": {"value": 20}
+        }
+      },
+      "marks": [
+        {
+          "type": "rect",
+          "clip": true,
+          "zindex": 0,
+          "from": {"data": "filteredProjets"},
+          "encode": {
+            "update": {
+              "x": {"value": 0},
+              "x2": {"signal": "itemWidth"},
+              "y": {"scale": "y", "field": "projet", "band": 0},
+              "height": {"signal": "itemHeight"},
+              "fill": {"signal": "itemBackColour"},
+              "stroke": {"signal": "itemStrokeColour"},
+              "strokeWidth": {"signal": "itemStrokeWidth"},
+              "cornerRadius": {"signal": "itemRadius"}
+            }
+          }
+        },
+        {
+          "type": "arc",
+          "clip": true,
+          "from": {"data": "filteredProjets"},
+          "encode": {
+            "update": {
+              "x": {"signal": "dxWidth + (numberWidth / 2)"},
+              "y": {"scale": "y", "field": "projet", "band": 0.45},
+              "startAngle": {"value": 0},
+              "endAngle": {"signal": "2*PI"},
+              "fill": {"signal": "sanitoralGreen"},
+              "outerRadius": {"value": 22}
+            }
+          }
+        },
+        {
+          "type": "text",
+          "clip": true,
+          "from": {"data": "filteredProjets"},
+          "encode": {
+            "update": {
+              "text": {"signal": "datum.projet"},
+              "x": {"signal": "dxWidth + (numberWidth / 2)"},
+              "y": {"scale": "y", "field": "projet", "band": 0.47},
+              "baseline": {"value": "middle"},
+              "align": {"value": "center"},
+              "fill": {"value": "white"},
+              "fontSize": {"value": 20},
+              "fontWeight": {"value": 400}
+            }
+          }
+        },
+        {
+          "type": "arc",
+          "clip": true,
+          "from": {"data": "filteredProjets"},
+          "encode": {
+            "update": {
+              "x": {"signal": "dxWidth + (numberWidth / 2)"},
+              "y": {"scale": "y", "field": "projet", "band": 0.45},
+              "startAngle": {"value": 0},
+              "endAngle": {"signal": "2*PI"},
+              "fill": {"value": "transparent"},
+              "outerRadius": {"value": 22},
+              "tooltip": {"signal": "showTooltips ? {'Type':datum.type, 'Date de début':timeFormat(datum.start_date, '%d/%m/%Y'), 'Livrables':datum.actual_deliverables+'/'+datum.planned_deliverables, 'Coûts':datum.actual_cost+'€/'+datum.planned_cost+'€', 'Délais':datum.actual_duration+'j/'+datum.planned_duration+'j'}:null"}
+            }
+          }
+        },
+        {
+          "type": "text",
+          "clip": true,
+          "from": {"data": "filteredProjets"},
+          "encode": {
+            "update": {
+              "text": {"value": "Phases"},
+              "x": {"signal": "dxWidth + numberWidth + (phasesWidth / 2)"},
+              "y": {"scale": "y", "field": "projet", "band": 0.40},
+              "baseline": {"value": "bottom"},
+              "align": {"value": "center"},
+              "fontSize": {"value": 14},
+              "fontWeight": {"value": 400}
+            }
+          }
+        },
+        {
+          "type": "rect",
+          "clip": true,
+          "from": {"data": "filteredPhases"},
+          "encode": {
+            "update": {
+              "x": {"signal": "dxWidth + numberWidth + (phasesWidth / 2) - ((maxPhases / 2) * dxPhases) + (datum.phase_no * dxPhases)"},
+              "y": {"scale": "y", "field": "projet", "band": 0.50},
+              "fill": {"signal": "datum.progression == 100 ? orangeCl:nullBackColour"},
+              "width": {"signal": "capsuleWidth"},
+              "height": {"signal": "capsuleHeight"},
+              "cornerRadius": {"signal": "bandRadius"},
+              "tooltip": {"signal": "showTooltips ? {'Phase':datum.phase_id+' - '+datum.phase_title,'Progression':datum.progression+'%', 'Livrables':datum.actual_deliverables+'/'+datum.planned_deliverables, 'Coûts':datum.actual_cost+'€/'+datum.planned_cost+'€', 'Délais':datum.actual_duration+'j/'+datum.planned_duration+'j'}:null"}
+            }
+          }
+        },
+        {
+          "type": "text",
+          "clip": true,
+          "from": {"data": "filteredProjets"},
+          "encode": {
+            "update": {
+              "text": {"value": "Progression"},
+              "x": {"signal": "dxWidth + numberWidth + phasesWidth + (progressionWidth / 2)"},
+              "y": {"scale": "y", "field": "projet", "band": 0.40},
+              "baseline": {"value": "bottom"},
+              "align": {"value": "center"},
+              "fontSize": {"value": 14},
+              "fontWeight": {"value": 400}
+            }
+          }
+        },
+        {
+          "type": "rect",
+          "clip": true,
+          "from": {"data": "filteredProjets"},
+          "encode": {
+            "update": {
+              "x": {"signal": "dxWidth + numberWidth + phasesWidth + bandPadding"},
+              "y": {"scale": "y", "field": "projet", "band": 0.50},
+              "fill": {"signal": "nullBackColour"},
+              "width": {"signal": "progressionWidth - bandPadding * 2"},
+              "height": {"signal": "bandHeight"},
+              "cornerRadius": {"signal": "bandRadius"}
+            }
+          }
+        },
+        {
+          "type": "rect",
+          "clip": true,
+          "from": {"data": "filteredProjets"},
+          "encode": {
+            "update": {
+              "x": {"signal": "dxWidth + numberWidth + phasesWidth + bandPadding"},
+              "y": {"scale": "y", "field": "projet", "band": 0.50},
+              "fill": {"signal": "orangeCl"},
+              "width": {"signal": "(datum.progression * (progressionWidth - bandPadding * 2)) / 100"},
+              "height": {"signal": "bandHeight"},
+              "cornerRadius": {"signal": "bandRadius"}
+            }
+          }
+        },
+        {
+          "type": "text",
+          "clip": true,
+          "from": {"data": "filteredProjets"},
+          "encode": {
+            "update": {
+              "text": {"signal": "round(datum.progression, 0) + '%'"},
+              "x": {"signal": "dxWidth + numberWidth + phasesWidth + bandPadding + ((datum.progression * (progressionWidth - bandPadding * 2)) / 100) - 5"},
+              "y": {"scale": "y", "field": "projet", "band": 0.61},
+              "baseline": {"value": "middle"},
+              "fill": {"value": "white"},
+              "align": {"value": "right"},
+              "fontSize": {"value": 11},
+              "fontWeight": {"value": 500}
+            }
+          }
+        },
+        {
+          "type": "rect",
+          "clip": true,
+          "from": {"data": "filteredProjets"},
+          "encode": {
+            "update": {
+              "x": {"signal": "dxWidth + numberWidth + phasesWidth + bandPadding"},
+              "y": {"scale": "y", "field": "projet", "band": 0.50},
+              "fill": {"value": "transparent"},
+              "width": {"signal": "progressionWidth - bandPadding * 2"},
+              "height": {"signal": "bandHeight"},
+              "cornerRadius": {"signal": "bandRadius"},
+              "tooltip": {"signal": "showTooltips ? {'Livrables':datum.actual_deliverables+'/'+datum.planned_deliverables}:null"}
+            }
+          }
+        },
+        {
+          "type": "text",
+          "clip": true,
+          "from": {"data": "filteredProjets"},
+          "encode": {
+            "update": {
+              "text": {"value": "Ecart coût"},
+              "x": {"signal": "dxWidth + numberWidth + phasesWidth + progressionWidth + (costWidth / 2)"},
+              "y": {"scale": "y", "field": "projet", "band": 0.40},
+              "baseline": {"value": "bottom"},
+              "align": {"value": "center"},
+              "fontSize": {"value": 14},
+              "fontWeight": {"value": 400}
+            }
+          }
+        },
+        {
+          "type": "rect",
+          "clip": true,
+          "from": {"data": "filteredProjets"},
+          "encode": {
+            "update": {
+              "x": {"signal": "dxWidth + numberWidth + phasesWidth + progressionWidth + bandPadding"},
+              "y": {"scale": "y", "field": "projet", "band": 0.50},
+              "fill": {"signal": "datum.actual_cost > datum.planned_cost ? 'transparent':nullBackColour"},
+              "width": {"signal": "costWidth - bandPadding * 2"},
+              "height": {"signal": "bandHeight"},
+              "cornerRadius": {"signal": "bandRadius"}
+            }
+          }
+        },
+        {
+          "type": "rect",
+          "clip": true,
+          "from": {"data": "filteredProjets"},
+          "encode": {
+            "update": {
+              "x": {"signal": "dxWidth + numberWidth + phasesWidth + progressionWidth + (costWidth / 2) - bandRadius"},
+              "y": {"scale": "y", "field": "projet", "band": 0.50},
+              "fill": {"signal": "redCl"},
+              "width": {"signal": "datum.actual_cost > datum.planned_cost ? datum.actual_cost >= datum.planned_cost * 2 ? (costWidth / 2 - bandPadding * 2) + bandRadius:((datum.actual_cost - datum.planned_cost) / datum.planned_cost) * (costWidth / 2 - bandPadding * 2) + bandRadius:0"},
+              "height": {"signal": "bandHeight"},
+              "cornerRadius": {"signal": "bandRadius"}
+            }
+          }
+        },
+        {
+          "type": "rect",
+          "clip": true,
+          "from": {"data": "filteredProjets"},
+          "encode": {
+            "update": {
+              "x": {"signal": "dxWidth + numberWidth + phasesWidth + progressionWidth + bandPadding"},
+              "y": {"scale": "y", "field": "projet", "band": 0.50},
+              "fill": {"signal": "greenCl"},
+              "width": {"signal": "datum.actual_cost > datum.planned_cost ? costWidth / 2 - bandPadding:(datum.actual_cost / datum.planned_cost) * (costWidth - bandPadding * 2)"},
+              "height": {"signal": "bandHeight"},
+              "cornerRadius": {"signal": "bandRadius"}
+            }
+          }
+        },
+        {
+          "type": "text",
+          "clip": true,
+          "from": {"data": "filteredProjets"},
+          "encode": {
+            "update": {
+              "text": {"signal": "datum.delta_cost >= 0 ? '+' + round(datum.delta_cost / 1000) + 'k€':round(datum.delta_cost / 1000) + 'k€'"},
+              "x": {"signal": "datum.delta_cost >= 0 ? abs(datum.delta_cost) > (datum.planned_cost * (3/4)) ? dxWidth + numberWidth + phasesWidth + progressionWidth + (costWidth / 2) + ((datum.actual_cost - datum.planned_cost) / datum.planned_cost) * (costWidth / 2 - bandPadding * 2) - 5:dxWidth + numberWidth + phasesWidth + progressionWidth + (costWidth / 2) + ((datum.actual_cost - datum.planned_cost) / datum.planned_cost) * (costWidth / 2 - bandPadding * 2) + 5:datum.actual_cost < (datum.planned_cost / 2) ? dxWidth + numberWidth + phasesWidth + progressionWidth + bandPadding + (datum.actual_cost / datum.planned_cost) * (costWidth - bandPadding * 2) + 5:dxWidth + numberWidth + phasesWidth + progressionWidth + bandPadding + (datum.actual_cost / datum.planned_cost) * (costWidth - bandPadding * 2) - 5"},
+              "y": {"scale": "y", "field": "projet", "band": 0.61},
+              "baseline": {"value": "middle"},
+              "fill": {"signal": "datum.delta_cost >= 0 ? abs(datum.delta_cost) > (datum.planned_cost * (3/4)) ? 'white':redCl:'white'"},
+              "align": {"signal": "datum.delta_cost >= 0 ? abs(datum.delta_cost) > (datum.planned_cost * (3/4)) ? 'right':'left':datum.actual_cost < (datum.planned_cost / 2) ? 'left':'right'"},
+              "fontSize": {"value": 11},
+              "fontWeight": {"value": 500}
+            }
+          }
+        },
+        {
+          "type": "rect",
+          "clip": true,
+          "from": {"data": "filteredProjets"},
+          "encode": {
+            "update": {
+              "x": {"signal": "dxWidth + numberWidth + phasesWidth + progressionWidth + bandPadding"},
+              "y": {"scale": "y", "field": "projet", "band": 0.50},
+              "fill": {"value": "transparent"},
+              "width": {"signal": "costWidth - bandPadding * 2"},
+              "height": {"signal": "bandHeight"},
+              "cornerRadius": {"signal": "bandRadius"},
+              "tooltip": {"signal": "showTooltips ? {'Coûts':datum.actual_cost+'€/'+datum.planned_cost+'€', 'Pourcentage':datum.percent_cost+'%'}:null"}
+            }
+          }
+        },
+        {
+          "type": "text",
+          "clip": true,
+          "from": {"data": "filteredProjets"},
+          "encode": {
+            "update": {
+              "text": {"value": "Ecart durée"},
+              "x": {"signal": "dxWidth + numberWidth + phasesWidth + progressionWidth + costWidth + (durationWidth / 2)"},
+              "y": {"scale": "y", "field": "projet", "band": 0.40},
+              "baseline": {"value": "bottom"},
+              "align": {"value": "center"},
+              "fontSize": {"value": 14},
+              "fontWeight": {"value": 400}
+            }
+          }
+        },
+        {
+          "type": "rect",
+          "clip": true,
+          "from": {"data": "filteredProjets"},
+          "encode": {
+            "update": {
+              "x": {"signal": "dxWidth + numberWidth + phasesWidth + progressionWidth + costWidth + bandPadding"},
+              "y": {"scale": "y", "field": "projet", "band": 0.50},
+              "fill": {"signal": "datum.actual_duration > datum.planned_duration ? 'transparent':nullBackColour"},
+              "width": {"signal": "durationWidth - bandPadding * 2"},
+              "height": {"signal": "bandHeight"},
+              "cornerRadius": {"signal": "bandRadius"}
+            }
+          }
+        },
+        {
+          "type": "rect",
+          "clip": true,
+          "from": {"data": "filteredProjets"},
+          "encode": {
+            "update": {
+              "x": {"signal": "dxWidth + numberWidth + phasesWidth + progressionWidth + costWidth + (durationWidth / 2) - bandRadius"},
+              "y": {"scale": "y", "field": "projet", "band": 0.50},
+              "fill": {"signal": "redCl"},
+              "width": {"signal": "datum.actual_duration > datum.planned_duration ? datum.actual_duration >= datum.planned_duration * 2 ? (durationWidth / 2 - bandPadding * 2) + bandRadius:((datum.actual_duration - datum.planned_duration) / datum.planned_duration) * (durationWidth / 2 - bandPadding * 2) + bandRadius:0"},
+              "height": {"signal": "bandHeight"},
+              "cornerRadius": {"signal": "bandRadius"}
+            }
+          }
+        },
+        {
+          "type": "rect",
+          "clip": true,
+          "from": {"data": "filteredProjets"},
+          "encode": {
+            "update": {
+              "x": {"signal": "dxWidth + numberWidth + phasesWidth + progressionWidth + costWidth + bandPadding"},
+              "y": {"scale": "y", "field": "projet", "band": 0.50},
+              "fill": {"signal": "greenCl"},
+              "width": {"signal": "datum.actual_duration > datum.planned_duration ? durationWidth / 2 - bandPadding:(datum.actual_duration / datum.planned_duration) * (durationWidth - bandPadding * 2)"},
+              "height": {"signal": "bandHeight"},
+              "cornerRadius": {"signal": "bandRadius"}
+            }
+          }
+        },
+        {
+          "type": "text",
+          "clip": true,
+          "from": {"data": "filteredProjets"},
+          "encode": {
+            "update": {
+              "text": {"signal": "datum.delta_duration >= 0 ? '+' + datum.delta_duration + 'j':datum.delta_duration + 'j'"},
+              "x": {"signal": "datum.delta_duration >= 0 ? abs(datum.delta_duration) > (datum.planned_duration * (3/4)) ? dxWidth + numberWidth + phasesWidth + progressionWidth + costWidth + (durationWidth / 2) + ((datum.actual_duration - datum.planned_duration) / datum.planned_duration) * (durationWidth / 2 - bandPadding * 2) - 5:dxWidth + numberWidth + phasesWidth + progressionWidth + costWidth + (durationWidth / 2) + ((datum.actual_duration - datum.planned_duration) / datum.planned_duration) * (durationWidth / 2 - bandPadding * 2) + 5:datum.actual_duration < (datum.planned_duration / 2) ? dxWidth + numberWidth + phasesWidth + progressionWidth + costWidth + bandPadding + (datum.actual_duration / datum.planned_duration) * (durationWidth - bandPadding * 2) + 5:dxWidth + numberWidth + phasesWidth + progressionWidth + costWidth + bandPadding + (datum.actual_duration / datum.planned_duration) * (durationWidth - bandPadding * 2) - 5"},
+              "y": {"scale": "y", "field": "projet", "band": 0.61},
+              "baseline": {"value": "middle"},
+              "fill": {"signal": "datum.delta_duration >= 0 ? abs(datum.delta_duration) > (datum.planned_duration * (3/4)) ? 'white':redCl:'white'"},
+              "align": {"signal": "datum.delta_duration >= 0 ? abs(datum.delta_duration) > (datum.planned_duration * (3/4)) ? 'right':'left':datum.actual_duration < (datum.planned_duration / 2) ? 'left':'right'"},
+              "fontSize": {"value": 11},
+              "fontWeight": {"value": 500}
+            }
+          }
+        },
+        {
+          "type": "rect",
+          "clip": true,
+          "from": {"data": "filteredProjets"},
+          "encode": {
+            "update": {
+              "x": {"signal": "dxWidth + numberWidth + phasesWidth + progressionWidth + costWidth + bandPadding"},
+              "y": {"scale": "y", "field": "projet", "band": 0.50},
+              "fill": {"value": "transparent"},
+              "width": {"signal": "durationWidth - bandPadding * 2"},
+              "height": {"signal": "bandHeight"},
+              "cornerRadius": {"signal": "bandRadius"},
+              "tooltip": {"signal": "showTooltips ? {'Délais':datum.actual_duration+'j/'+datum.planned_duration+'j', 'Pourcentage':datum.percent_duration+'%'}:null"}
+            }
+          }
+        },
+        {
+          "type": "arc",
+          "clip": true,
+          "from": {"data": "filteredProjets"},
+          "encode": {
+            "update": {
+              "x": {"signal": "itemWidth"},
+              "y": {"scale": "y", "field": "projet", "band": 0.2},
+              "startAngle": {"value": 0},
+              "endAngle": {"signal": "2*PI"},
+              "fill": {"signal": "datum.alerts > 0 ? redCl:'transparent'"},
+              "outerRadius": {"value": 11}
+            }
+          }
+        },
+        {
+          "type": "text",
+          "clip": true,
+          "from": {"data": "filteredProjets"},
+          "encode": {
+            "update": {
+              "text": {"value": "!"},
+              "x": {"signal": "itemWidth"},
+              "y": {"scale": "y", "field": "projet", "band": 0.2},
+              "baseline": {"value": "middle"},
+              "align": {"value": "center"},
+              "fill": {"signal": "datum.alerts > 0 ? 'white':'transparent'"},
+              "fontSize": {"value": 20},
+              "fontWeight": {"value": 400}
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "name": "y",
+      "type": "band",
+      "domain": {
+        "data": "filteredProjets",
+        "field": "projet",
+        "sort": true
+      },
+      "range": {"signal": "yRange"}
+    },
+    {
+      "name": "scaleScrollBarY",
+      "type": "linear",
+      "domain": [1, {"signal": "scrollPositionMax"}],
+      "range": [
+        {"signal": "headerHeight"},
+        {"signal": "scrollAreaHeight + 50"}
+      ]
+    }
+  ],
+  "config": {
+    "view": {"stroke": "transparent"},
+    "style": {
+      "col": {"fontSize": 13},
+      "cell": {"strokeWidth": {"value": "0"}}
+    },
+    "font": "Verdana",
+    "text": {
+      "font": "Verdana",
+      "fontSize": 13,
+      "fontWeight": "700",
+      "baseline": "middle"
+    },
+    "axis": {
+      "labelColour": {"signal": "textColour"},
+      "labelFontSize": 13
+    },
+    "title": {
+      "color": {"signal": "textColour"},
+      "fontSize": {"value": 16}
+    }
+  }
+}
