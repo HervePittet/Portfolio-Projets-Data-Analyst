@@ -126,7 +126,7 @@ Nous nous baserons sur les données issues du SIRH non anonymisées. Il faudra l
 * Développer des visualisations et les présenter au client.
 
 ### &#128203; Scénario
-En tant que consultant Data Analyst chez ESN Data, nous sommes déployé chez notre client Sanitoral pour réaliser un mission de visualisation de données.
+En tant que consultant Data Analyst chez **ESN Data**, nous sommes déployé chez notre client Sanitoral pour réaliser un mission de visualisation de données.
 
 La cheffe de projet chez Sanitoral a besoin d'un tableau de bord pour :
 * suivre l'avancement des projets et les coûts,
@@ -148,7 +148,7 @@ Après avoir établi le Product Strategy Canvas sur la base de la note de cadrag
 * Effectuer des analyses univariées.
 
 ### &#128203; Scénario
-Nous venons de commencer notre mission en tant qu'analyste chez *BottleNeck*, un marchand de vin prestigieux.  
+Nous venons de commencer notre mission en tant qu'analyste chez **BottleNeck**, un marchand de vin prestigieux.  
 Les outils de gestion et d'analyse sont artisanaux et la direction a du mal à analyser les données et la gestion des stocks est complexe.
 
 Notre mission se décomposera en 3 phases :  
