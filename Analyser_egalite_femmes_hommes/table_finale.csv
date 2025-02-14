@@ -1,0 +1,257 @@
+"id_salarie";"sexe";"service";"type_contrat";"duree_du_travail";"taux_activite";"promotion";"salaire_base_mensuel";"%variable_moyen";"augmentation";"accident_travail";"conge_marternite_A-1";"age";"anciennete";"anciennete_arrondie";"tranche_age";"tranche_anciennete";"remuneration_brute_an_EQTP"
+0;"H";"Marketing";"CDI";"TC";100;"Non";9999.3833;27;"Non";"Non";0;39;17.8;17;"De 30 à 39 ans";"De 15 à 19 ans";152390.601492
+1;"H";"Compta Finances";"CDI";"TC";100;"Non";9978.15;34;"Non";"Non";0;45;13;13;"De 40 à 49 ans";"De 10 à 14 ans";160448.652
+2;"H";"Marketing";"CDI";"TC";100;"Non";9940.2333;24;"Non";"Non";0;39;22.7;22;"De 30 à 39 ans";"De 20 à 24 ans";147910.671504
+3;"H";"RH";"CDI";"TC";100;"Oui";9928.1;27;"Oui";"Non";0;30;10;10;"De 30 à 39 ans";"De 10 à 14 ans";151304.244
+4;"F";"Consultant";"CDI";"TC";100;"Non";9873.5;13;"Non";"Non";0;39;22.5;22;"De 30 à 39 ans";"De 20 à 24 ans";133884.65999999997
+5;"H";"Commercial";"CDI";"TC";100;"Non";9785.5333;28;"Non";"Oui";0;34;17.2;17;"De 30 à 39 ans";"De 15 à 19 ans";150305.791488
+6;"F";"Consultant";"CDI";"TC";100;"Non";9782.5;38;"Non";"Non";0;42;6.3;6;"De 40 à 49 ans";"De 5 à 9 ans";161998.19999999998
+7;"F";"Commercial";"CDI";"TC";100;"Non";9777.95;4;"Oui";"Oui";0;40;10.5;10;"De 40 à 49 ans";"De 10 à 14 ans";122028.816
+8;"H";"Consultant";"CDI";"TC";100;"Oui";9737;12;"Oui";"Non";0;50;7.4;7;"De 50 ans à plus";"De 5 à 9 ans";130865.28000000001
+9;"H";"RH";"CDI";"TC";100;"Non";9642.9667;17;"Non";"Non";0;53;19;19;"De 50 ans à plus";"De 15 à 19 ans";135387.252468
+10;"H";"RH";"CDI";"TC";100;"Non";9635.3833;19;"Oui";"Oui";0;40;6.4;6;"De 40 à 49 ans";"De 5 à 9 ans";137593.273524
+11;"H";"Informatique";"CDI";"TC";100;"Non";9573.2;5;"Oui";"Non";0;46;7.9;7;"De 40 à 49 ans";"De 5 à 9 ans";120622.32000000002
+12;"H";"Commercial";"CDI";"TC";100;"Non";9573.2;7;"Non";"Oui";0;46;18.7;18;"De 40 à 49 ans";"De 15 à 19 ans";122919.88800000002
+13;"F";"Commercial";"CDI";"TC";100;"Non";9555;20;"Oui";"Non";0;33;13.9;13;"De 30 à 39 ans";"De 10 à 14 ans";137592
+14;"F";"Commercial";"CDI";"TC";100;"Non";9497.3667;17;"Oui";"Non";0;45;13.8;13;"De 40 à 49 ans";"De 10 à 14 ans";133343.028468
+15;"H";"Commercial";"CDI";"TC";100;"Oui";9488.2667;38;"Oui";"Non";0;52;14.9;14;"De 50 ans à plus";"De 10 à 14 ans";157125.69655199998
+16;"H";"Consultant";"CDI";"TC";100;"Non";9447.3167;0;"Oui";"Non";0;45;21.1;21;"De 40 à 49 ans";"De 20 à 24 ans";113367.8004
+17;"F";"Consultant";"CDI";"TC";100;"Non";9426.0833;24;"Oui";"Non";0;50;23.8;23;"De 50 ans à plus";"De 20 à 24 ans";140260.119504
+18;"H";"Consultant";"CDI";"TC";100;"Non";9400.3;3;"Oui";"Non";0;54;20.1;20;"De 50 ans à plus";"De 20 à 24 ans";116187.708
+19;"F";"Informatique";"CDI";"TC";100;"Oui";9366.9333;8;"Oui";"Non";0;44;9.1;9;"De 40 à 49 ans";"De 5 à 9 ans";121395.45556800002
+20;"F";"Compta Finances";"CDI";"TC";100;"Non";9256.2167;1;"Oui";"Non";0;55;7.4;7;"De 50 ans à plus";"De 5 à 9 ans";112185.34640400001
+21;"F";"Marketing";"CDI";"TC";100;"Non";9218.3;4;"Non";"Non";0;41;6.7;6;"De 40 à 49 ans";"De 5 à 9 ans";115044.38399999999
+22;"F";"Consultant";"CDI";"TC";100;"Non";9162.1833;17;"Oui";"Non";0;51;9.1;9;"De 50 ans à plus";"De 5 à 9 ans";128637.053532
+23;"H";"Informatique";"CDI";"TC";100;"Non";9096.9667;21;"Non";"Oui";0;57;5.8;5;"De 50 ans à plus";"De 5 à 9 ans";132087.956484
+24;"H";"Commercial";"CDI";"TC";100;"Non";9069.6667;1;"Non";"Non";0;41;18.4;18;"De 40 à 49 ans";"De 15 à 19 ans";109924.36040399999
+25;"H";"RH";"CDI";"TC";100;"Oui";9039.3333;20;"Oui";"Non";0;28;10.7;10;"De 0 à 30 ans";"De 10 à 14 ans";130166.39952
+26;"F";"RH";"CDI";"TP";91;"Non";8860.8;19;"Oui";"Non";0;42;11.9;11;"De 40 à 49 ans";"De 10 à 14 ans";139046.4
+27;"F";"Commercial";"CDI";"TC";100;"Oui";8828.5167;17;"Non";"Oui";0;31;10.6;10;"De 30 à 39 ans";"De 10 à 14 ans";123952.374468
+28;"F";"RH";"CDI";"TC";100;"Oui";8746.6167;19;"Non";"Non";0;35;5.2;5;"De 30 à 39 ans";"De 5 à 9 ans";124901.68647600002
+29;"H";"Informatique";"CDI";"TC";100;"Non";8716.2833;20;"Non";"Non";0;31;8.3;8;"De 30 à 39 ans";"De 5 à 9 ans";125514.47951999998
+30;"H";"Commercial";"CDI";"TC";100;"Non";8714.7667;37;"Oui";"Non";0;54;15.6;15;"De 50 ans à plus";"De 15 à 19 ans";143270.764548
+31;"H";"Marketing";"CDI";"TC";100;"Non";8696.5667;34;"Oui";"Non";0;58;13.1;13;"De 50 ans à plus";"De 10 à 14 ans";139840.792536
+32;"H";"Compta Finances";"CDI";"TC";100;"Non";8696.5667;37;"Non";"Non";0;58;8.7;8;"De 50 ans à plus";"De 5 à 9 ans";142971.556548
+33;"F";"Compta Finances";"CDI";"TC";100;"Non";8655.6167;26;"Oui";"Non";0;42;15.8;15;"De 40 à 49 ans";"De 15 à 19 ans";130872.92450400002
+34;"F";"Commercial";"CDI";"TC";100;"Non";8629.8333;3;"Non";"Non";0;46;19.4;19;"De 40 à 49 ans";"De 15 à 19 ans";106664.73958800001
+35;"H";"RH";"CDI";"TC";100;"Non";8563.1;7;"Non";"Non";0;41;21.5;21;"De 40 à 49 ans";"De 20 à 24 ans";109950.20400000001
+36;"H";"Informatique";"CDI";"TC";100;"Non";8458.45;1;"Non";"Non";0;36;15.2;15;"De 30 à 39 ans";"De 15 à 19 ans";102516.414
+37;"H";"Commercial";"CDI";"TC";100;"Non";8428.1167;18;"Oui";"Oui";0;50;20;20;"De 50 ans à plus";"De 20 à 24 ans";119342.13247200001
+38;"F";"Compta Finances";"CDI";"TC";100;"Oui";8422.05;38;"Non";"Non";0;52;11.7;11;"De 50 ans à plus";"De 10 à 14 ans";139469.148
+39;"H";"Commercial";"CDI";"TC";100;"Oui";8337.1167;16;"Non";"Oui";0;33;6.3;6;"De 30 à 39 ans";"De 5 à 9 ans";116052.664464
+40;"F";"Compta Finances";"CDI";"TC";100;"Non";8332.5667;12;"Non";"Non";0;37;5.2;5;"De 30 à 39 ans";"De 5 à 9 ans";111989.696448
+41;"F";"Compta Finances";"CDI";"TC";100;"Non";8328.0167;14;"Oui";"Non";0;34;10.2;10;"De 30 à 39 ans";"De 10 à 14 ans";113927.26845600002
+42;"H";"RH";"CDI";"TC";100;"Non";8277.9667;10;"Non";"Non";0;36;20.4;20;"De 30 à 39 ans";"De 20 à 24 ans";109269.16044000002
+43;"F";"Compta Finances";"CDI";"TC";100;"Non";8218.8167;14;"Non";"Non";0;62;16.3;16;"De 50 ans à plus";"De 15 à 19 ans";112433.412456
+44;"F";"Commercial";"CDI";"TC";100;"Non";8126.3;36;"Oui";"Oui";0;45;18.2;18;"De 40 à 49 ans";"De 15 à 19 ans";132621.216
+45;"F";"RH";"CDI";"TC";100;"Non";8108.1;38;"Non";"Non";0;32;11.7;11;"De 30 à 39 ans";"De 10 à 14 ans";134270.136
+46;"H";"Compta Finances";"CDI";"TC";100;"Oui";8073.2167;38;"Oui";"Non";0;47;15.7;15;"De 40 à 49 ans";"De 15 à 19 ans";133692.468552
+47;"F";"Marketing";"CDI";"TC";100;"Non";8056.5333;14;"Non";"Non";0;47;21.8;21;"De 40 à 49 ans";"De 20 à 24 ans";110213.375544
+48;"F";"Compta Finances";"CDI";"TC";100;"Oui";8056.5333;13;"Non";"Non";0;57;10.3;10;"De 50 ans à plus";"De 10 à 14 ans";109246.59154799998
+49;"F";"Commercial";"CDI";"TC";100;"Non";7942.7833;38;"Oui";"Non";0;44;10.8;10;"De 40 à 49 ans";"De 10 à 14 ans";131532.491448
+50;"H";"Commercial";"CDI";"TC";100;"Non";7927.6167;32;"Oui";"Oui";0;44;10;10;"De 40 à 49 ans";"De 10 à 14 ans";125573.44852800002
+51;"F";"Compta Finances";"CDI";"TC";100;"Non";7898.8;35;"Non";"Oui";0;59;23;23;"De 50 ans à plus";"De 20 à 24 ans";127960.56000000001
+52;"F";"Compta Finances";"CDI";"TC";100;"Non";7889.7;27;"Non";"Non";0;32;16.5;16;"De 30 à 39 ans";"De 15 à 19 ans";120239.02799999999
+53;"F";"RH";"CDI";"TC";100;"Non";7877.5667;36;"Oui";"Non";0;44;22.2;22;"De 40 à 49 ans";"De 20 à 24 ans";128561.88854399997
+54;"H";"Compta Finances";"CDI";"TC";100;"Non";7753.2;21;"Oui";"Non";0;42;15.2;15;"De 40 à 49 ans";"De 15 à 19 ans";112576.46399999999
+55;"H";"Commercial";"CDI";"TC";100;"Non";7713.7667;23;"Oui";"Oui";0;52;14.3;14;"De 50 ans à plus";"De 10 à 14 ans";113855.19649200002
+56;"H";"RH";"CDI";"TC";100;"Non";7710.7333;27;"Non";"Non";0;34;7.5;7;"De 30 à 39 ans";"De 5 à 9 ans";117511.575492
+57;"F";"RH";"CDI";"TC";100;"Non";7687.9833;9;"Non";"Non";0;43;17.3;17;"De 40 à 49 ans";"De 15 à 19 ans";100558.82156400003
+58;"F";"Consultant";"CDI";"TC";100;"Oui";7672.8167;37;"Oui";"Non";0;40;3.8;3;"De 40 à 49 ans";"De 0 à 4 ans";126141.10654800003
+59;"H";"Informatique";"CDI";"TC";100;"Non";7654.6167;5;"Oui";"Non";0;41;23.3;23;"De 40 à 49 ans";"De 20 à 24 ans";96448.17042000001
+60;"F";"RH";"CDI";"TC";100;"Non";7637.9333;21;"Oui";"Non";0;49;8.6;8;"De 40 à 49 ans";"De 5 à 9 ans";110902.79151600001
+61;"H";"Marketing";"CDI";"TC";100;"Non";7637.9333;27;"Non";"Non";0;35;13.8;13;"De 30 à 39 ans";"De 10 à 14 ans";116402.10349200001
+62;"F";"Compta Finances";"CDI";"TC";100;"Oui";7601.5333;19;"Oui";"Non";0;41;12.5;12;"De 40 à 49 ans";"De 10 à 14 ans";108549.895524
+63;"F";"Commercial";"CDI";"TC";100;"Non";7496.8833;6;"Oui";"Non";0;40;21.9;21;"De 40 à 49 ans";"De 20 à 24 ans";95360.355576
+64;"F";"Compta Finances";"CDI";"TC";100;"Non";7377.0667;17;"Oui";"Non";0;58;6;6;"De 50 ans à plus";"De 5 à 9 ans";103574.016468
+65;"H";"Marketing";"CDI";"TP";80;"Non";7358.8667;31;"Oui";"Non";0;28;9.9;9;"De 0 à 30 ans";"De 5 à 9 ans";144601.730655
+66;"F";"Consultant";"CDI";"TC";100;"Non";7308.8167;12;"Non";"Non";0;36;20.2;20;"De 30 à 39 ans";"De 20 à 24 ans";98230.496448
+67;"F";"Consultant";"CDI";"TC";100;"Non";7304.2667;17;"Oui";"Non";0;36;7.9;7;"De 30 à 39 ans";"De 5 à 9 ans";102551.90446799998
+68;"H";"Consultant";"CDI";"TP";80;"Oui";7269.08;7;"Oui";"Non";0;48;9.2;9;"De 40 à 49 ans";"De 5 à 9 ans";116668.73400000003
+69;"H";"Marketing";"CDI";"TC";100;"Non";7264.8333;31;"Non";"Non";0;55;15.6;15;"De 50 ans à plus";"De 15 à 19 ans";114203.17947600002
+70;"H";"RH";"CDI";"TC";100;"Oui";7263.3167;30;"Oui";"Non";0;53;12.7;12;"De 50 ans à plus";"De 10 à 14 ans";113307.74052
+71;"H";"Compta Finances";"CDI";"TC";100;"Non";7185.9667;7;"Oui";"Non";0;59;5.5;5;"De 50 ans à plus";"De 5 à 9 ans";92267.812428
+72;"H";"Marketing";"CDI";"TC";100;"Oui";7184.45;37;"Oui";"Non";0;41;24.1;24;"De 40 à 49 ans";"De 20 à 24 ans";118112.35800000001
+73;"H";"Consultant";"CDI";"TC";100;"Non";7178.3833;38;"Oui";"Non";0;32;6.5;6;"De 30 à 39 ans";"De 5 à 9 ans";118874.027448
+74;"F";"RH";"CDI";"TC";100;"Non";7157.15;3;"Non";"Non";0;37;3.7;3;"De 30 à 39 ans";"De 0 à 4 ans";88462.374
+75;"F";"RH";"CDI";"TC";100;"Non";7148.05;21;"Oui";"Oui";1;34;7.9;7;"De 30 à 39 ans";"De 5 à 9 ans";103789.686
+76;"H";"Commercial";"CDI";"TC";100;"Non";7098;1;"Oui";"Oui";0;47;23.2;23;"De 40 à 49 ans";"De 20 à 24 ans";86027.76
+77;"H";"Informatique";"CDI";"TC";100;"Non";7081.3167;26;"Non";"Non";0;52;20;20;"De 50 ans à plus";"De 20 à 24 ans";107069.50850400001
+78;"H";"Consultant";"CDI";"TC";100;"Oui";6973.6333;31;"Non";"Non";0;50;19.1;19;"De 50 ans à plus";"De 15 à 19 ans";109625.515476
+79;"F";"Commercial";"CDI";"TC";100;"Oui";6902.35;17;"Non";"Non";0;34;17.3;17;"De 30 à 39 ans";"De 15 à 19 ans";96908.99399999999
+80;"H";"Marketing";"CDI";"TP";69;"Non";6842.16;21;"Oui";"Non";0;56;23.9;23;"De 50 ans à plus";"De 20 à 24 ans";143982.8452173913
+81;"F";"Commercial";"CDI";"TC";100;"Non";6838.65;5;"Oui";"Oui";1;30;3;3;"De 30 à 39 ans";"De 0 à 4 ans";86166.98999999999
+82;"F";"Commercial";"CDI";"TC";100;"Non";6818.9333;14;"Oui";"Non";0;45;24.3;24;"De 40 à 49 ans";"De 20 à 24 ans";93283.00754400001
+83;"F";"Compta Finances";"CDI";"TP";91;"Non";6743.36;4;"Non";"Non";0;41;22.7;22;"De 40 à 49 ans";"De 20 à 24 ans";92480.3657142857
+84;"F";"Consultant";"CDI";"TC";100;"Non";6591.4333;19;"Non";"Oui";0;58;20.2;20;"De 50 ans à plus";"De 20 à 24 ans";94125.66752399999
+85;"F";"Marketing";"CDI";"TC";100;"Non";6583.85;13;"Oui";"Non";0;57;12.6;12;"De 50 ans à plus";"De 10 à 14 ans";89277.00600000001
+86;"H";"Informatique";"CDI";"TC";100;"Oui";6526.2167;36;"Non";"Non";0;58;22.8;22;"De 50 ans à plus";"De 20 à 24 ans";106507.85654400001
+87;"H";"Informatique";"CDI";"TC";100;"Non";6494.3667;1;"Non";"Oui";0;38;6;6;"De 30 à 39 ans";"De 5 à 9 ans";78711.72440399998
+88;"F";"Consultant";"CDI";"TC";100;"Non";6413.9833;24;"Oui";"Non";0;43;7.2;7;"De 40 à 49 ans";"De 5 à 9 ans";95440.07150399999
+89;"H";"Consultant";"CDI";"TC";100;"Non";6409.4333;21;"Non";"Non";0;52;7.1;7;"De 50 ans à plus";"De 5 à 9 ans";93064.97151599999
+90;"H";"Consultant";"CDI";"TC";100;"Non";6398.8167;11;"Oui";"Non";0;47;7;7;"De 40 à 49 ans";"De 5 à 9 ans";85232.23844400002
+91;"F";"Informatique";"CDI";"TC";100;"Non";6356.35;26;"Oui";"Non";0;33;4.2;4;"De 30 à 39 ans";"De 0 à 4 ans";96108.01200000002
+92;"F";"Consultant";"CDI";"TC";100;"Non";6301.75;34;"Non";"Non";0;57;9.7;9;"De 50 ans à plus";"De 5 à 9 ans";101332.14
+93;"F";"Commercial";"CDI";"TC";100;"Non";6212.2667;5;"Oui";"Non";0;44;4.6;4;"De 40 à 49 ans";"De 0 à 4 ans";78274.56042000001
+94;"H";"Commercial";"CDI";"TC";100;"Oui";6195.5833;23;"Non";"Non";0;45;13.1;13;"De 40 à 49 ans";"De 10 à 14 ans";91446.809508
+95;"H";"Informatique";"CDI";"TP";69;"Non";6178.64;17;"Non";"Non";0;48;23.3;23;"De 40 à 49 ans";"De 20 à 24 ans";125721.89217391306
+96;"H";"RH";"CDI";"TC";100;"Non";6175.8667;38;"Non";"Non";0;28;9.7;9;"De 0 à 30 ans";"De 5 à 9 ans";102272.352552
+97;"F";"Commercial";"CDI";"TC";100;"Oui";6163.7333;16;"Oui";"Non";0;47;23.9;23;"De 40 à 49 ans";"De 20 à 24 ans";85799.167536
+98;"F";"Compta Finances";"CDI";"TC";100;"Oui";6127.3333;0;"Oui";"Non";0;48;14.3;14;"De 40 à 49 ans";"De 10 à 14 ans";73527.99960000001
+99;"H";"Commercial";"CDI";"TC";100;"Non";6121.2667;32;"Non";"Oui";0;37;20.5;20;"De 30 à 39 ans";"De 20 à 24 ans";96960.864528
+100;"H";"Consultant";"CDI";"TC";100;"Non";6043.9167;3;"Oui";"Non";0;42;16.9;16;"De 40 à 49 ans";"De 15 à 19 ans";74702.81041199999
+101;"H";"Commercial";"CDI";"TC";100;"Non";6031.7833;39;"Oui";"Oui";0;44;19.2;19;"De 40 à 49 ans";"De 15 à 19 ans";100610.14544400001
+102;"H";"Marketing";"CDI";"TC";100;"Non";6002.9667;2;"Oui";"Oui";0;46;22.8;22;"De 40 à 49 ans";"De 20 à 24 ans";73476.312408
+103;"H";"Commercial";"CDI";"TC";100;"Non";5984.7667;6;"Non";"Non";0;45;24.9;24;"De 40 à 49 ans";"De 20 à 24 ans";76126.232424
+104;"F";"Marketing";"CDI";"TP";69;"Non";5951.92;32;"Oui";"Non";0;49;8.2;8;"De 40 à 49 ans";"De 5 à 9 ans";136635.38086956524
+105;"H";"Commercial";"CDI";"TC";100;"Non";5949.8833;17;"Oui";"Non";0;31;16.2;16;"De 30 à 39 ans";"De 15 à 19 ans";83536.361532
+106;"H";"Marketing";"CDI";"TC";100;"Non";5930.1667;33;"Non";"Non";0;42;5.9;5;"De 40 à 49 ans";"De 5 à 9 ans";94645.460532
+107;"F";"Commercial";"CDI";"TP";69;"Non";5895.76;23;"Oui";"Non";0;50;22.4;22;"De 50 ans à plus";"De 20 à 24 ans";126117.99652173913
+108;"H";"Consultant";"CDI";"TC";100;"Non";5810.35;36;"Oui";"Non";0;37;5.8;5;"De 30 à 39 ans";"De 5 à 9 ans";94824.91200000001
+109;"H";"Commercial";"CDI";"TC";100;"Non";5805.8;37;"Non";"Non";0;36;21.1;21;"De 30 à 39 ans";"De 20 à 24 ans";95447.35200000001
+110;"H";"Commercial";"CDI";"TC";100;"Non";5749.6833;17;"Non";"Non";0;52;13.8;13;"De 50 ans à plus";"De 10 à 14 ans";80725.55353199999
+111;"F";"Consultant";"CDI";"TC";100;"Oui";5739.0667;6;"Oui";"Non";0;52;24.7;24;"De 50 ans à plus";"De 20 à 24 ans";73000.92842400001
+112;"H";"Compta Finances";"CDI";"TP";69;"Non";5724.16;15;"Oui";"Non";0;34;18.6;18;"De 30 à 39 ans";"De 15 à 19 ans";114483.19999999998
+113;"F";"Consultant";"CDI";"TC";100;"Non";5585.8833;17;"Oui";"Non";0;25;15.7;15;"De 0 à 30 ans";"De 15 à 19 ans";78425.801532
+114;"F";"Commercial";"CDI";"TC";100;"Oui";5581.3333;20;"Oui";"Oui";0;38;23.9;23;"De 30 à 39 ans";"De 20 à 24 ans";80371.19952000001
+115;"F";"RH";"CDI";"TC";100;"Non";5522.1833;9;"Oui";"Non";0;60;5.9;5;"De 50 ans à plus";"De 5 à 9 ans";72230.157564
+116;"H";"Marketing";"CDI";"TC";100;"Oui";5517.6333;23;"Oui";"Non";0;44;23.3;23;"De 40 à 49 ans";"De 20 à 24 ans";81440.267508
+117;"H";"Commercial";"CDI";"TC";100;"Non";5464.55;34;"Non";"Non";0;47;10.5;10;"De 40 à 49 ans";"De 10 à 14 ans";87869.964
+118;"H";"Marketing";"CDI";"TP";69;"Non";5462.08;39;"Non";"Non";0;30;7.5;7;"De 30 à 39 ans";"De 5 à 9 ans";132039.84695652177
+119;"H";"Consultant";"CDI";"TC";100;"Non";5455.45;7;"Non";"Non";0;50;19;19;"De 50 ans à plus";"De 15 à 19 ans";70047.978
+120;"H";"Consultant";"CDI";"TP";69;"Non";5448.56;30;"Non";"Non";0;52;7.3;7;"De 50 ans à plus";"De 5 à 9 ans";123184.83478260871
+121;"F";"Consultant";"CDI";"TC";100;"Non";5388.7167;30;"Oui";"Non";0;44;8.4;8;"De 40 à 49 ans";"De 5 à 9 ans";84063.98052
+122;"H";"RH";"CDI";"TC";100;"Non";5359.9;4;"Oui";"Non";0;59;15.7;15;"De 50 ans à plus";"De 15 à 19 ans";66891.552
+123;"F";"RH";"CDI";"TC";100;"Non";5293.1667;39;"Non";"Non";0;63;18.6;18;"De 50 ans à plus";"De 15 à 19 ans";88290.020556
+124;"H";"Informatique";"CDI";"TC";100;"Non";5212.7833;11;"Non";"Non";0;49;4.2;4;"De 40 à 49 ans";"De 0 à 4 ans";69434.27355600001
+125;"F";"RH";"CDI";"TC";100;"Non";5106.6167;10;"Non";"Non";0;47;9.8;9;"De 40 à 49 ans";"De 5 à 9 ans";67407.34044
+126;"H";"Consultant";"CDI";"TP";80;"Non";5097.2133;10;"Oui";"Non";0;41;9.3;9;"De 40 à 49 ans";"De 5 à 9 ans";84104.01945
+127;"F";"Commercial";"CDI";"TC";100;"Non";5092.9667;11;"Oui";"Non";0;41;23.1;23;"De 40 à 49 ans";"De 20 à 24 ans";67838.316444
+128;"F";"RH";"CDI";"TC";100;"Non";5076.2833;33;"Non";"Non";0;52;4.4;4;"De 50 ans à plus";"De 0 à 4 ans";81017.48146800001
+129;"F";"RH";"CDI";"TC";100;"Non";5067.1833;39;"Oui";"Non";0;52;15.1;15;"De 50 ans à plus";"De 15 à 19 ans";84520.617444
+130;"F";"RH";"CDI";"TC";100;"Non";5056.5667;24;"Oui";"Non";1;31;16.2;16;"De 30 à 39 ans";"De 15 à 19 ans";75241.71249600001
+131;"H";"RH";"CDI";"TC";100;"Non";5035.3333;24;"Non";"Non";0;55;24;24;"De 50 ans à plus";"De 20 à 24 ans";74925.759504
+132;"H";"Compta Finances";"CDI";"TC";100;"Non";4988.3167;8;"Non";"Non";0;48;22.2;22;"De 40 à 49 ans";"De 20 à 24 ans";64648.58443200001
+133;"F";"Commercial";"CDI";"TP";69;"Non";4974.32;32;"Non";"Oui";0;58;11.8;11;"De 50 ans à plus";"De 10 à 14 ans";114193.0852173913
+134;"F";"Commercial";"CDI";"TP";69;"Non";4882.8;17;"Oui";"Non";0;50;9.9;9;"De 50 ans à plus";"De 5 à 9 ans";99354.3652173913
+135;"F";"RH";"CDI";"TP";69;"Non";4851.6;14;"Non";"Non";0;35;20.6;20;"De 30 à 39 ans";"De 20 à 24 ans";96188.24347826089
+136;"H";"Consultant";"CDI";"TP";69;"Oui";4795.44;19;"Non";"Non";0;29;5.6;5;"De 0 à 30 ans";"De 5 à 9 ans";99244.75826086955
+137;"F";"Marketing";"CDI";"TC";100;"Non";4763.85;7;"Oui";"Non";0;38;10.8;10;"De 30 à 39 ans";"De 10 à 14 ans";61167.83400000001
+138;"F";"Consultant";"CDI";"TC";100;"Non";4712.2833;26;"Oui";"Non";0;39;12;12;"De 30 à 39 ans";"De 10 à 14 ans";71249.723496
+139;"F";"Informatique";"CDI";"TC";100;"Non";4663.75;5;"Non";"Oui";0;55;24.4;24;"De 50 ans à plus";"De 20 à 24 ans";58763.25
+140;"H";"Marketing";"CDI";"TC";100;"Non";4624.3167;15;"Non";"Non";0;38;10.2;10;"De 30 à 39 ans";"De 10 à 14 ans";63815.57046
+141;"F";"Marketing";"CDI";"TC";100;"Non";4563.65;38;"Oui";"Oui";0;47;16.2;16;"De 40 à 49 ans";"De 15 à 19 ans";75574.044
+142;"F";"Consultant";"CDI";"TC";100;"Non";4516.6333;34;"Oui";"Non";0;43;17.4;17;"De 40 à 49 ans";"De 15 à 19 ans";72627.463464
+143;"H";"RH";"CDI";"TC";100;"Non";4499.95;22;"Oui";"Non";0;50;5.8;5;"De 50 ans à plus";"De 5 à 9 ans";65879.268
+144;"H";"Consultant";"CDI";"TC";100;"Non";4449.9;33;"Oui";"Non";0;49;2.9;2;"De 40 à 49 ans";"De 0 à 4 ans";71020.404
+145;"F";"Marketing";"CDI";"TC";100;"Non";4424.1167;30;"Non";"Non";0;46;24.2;24;"De 40 à 49 ans";"De 20 à 24 ans";69016.22052
+146;"H";"Compta Finances";"CDI";"TC";100;"Oui";4421.0833;6;"Oui";"Non";0;50;14.2;14;"De 50 ans à plus";"De 10 à 14 ans";56236.179576
+147;"H";"Consultant";"CDI";"TC";100;"Non";4296.7167;39;"Non";"Non";0;60;10.8;10;"De 50 ans à plus";"De 10 à 14 ans";71669.234556
+148;"F";"Consultant";"CDI";"TC";100;"Oui";4289.1333;12;"Non";"Non";0;60;12.6;12;"De 50 ans à plus";"De 10 à 14 ans";57645.951552000006
+149;"H";"Consultant";"CDI";"TC";100;"Non";4281.55;13;"Oui";"Non";0;35;8.3;8;"De 30 à 39 ans";"De 5 à 9 ans";58057.818
+150;"H";"Compta Finances";"CDI";"TC";100;"Non";4263.35;31;"Non";"Non";0;52;15.7;15;"De 50 ans à plus";"De 15 à 19 ans";67019.86200000001
+151;"F";"Compta Finances";"CDI";"TC";100;"Non";4204.2;39;"Oui";"Non";0;49;9.3;9;"De 40 à 49 ans";"De 5 à 9 ans";70126.056
+152;"F";"Compta Finances";"CDI";"TC";100;"Non";4198.1333;34;"Oui";"Non";0;31;4.8;4;"De 30 à 39 ans";"De 0 à 4 ans";67505.983464
+153;"H";"Informatique";"CDI";"TP";69;"Non";4165.2;12;"Non";"Non";0;55;22.6;22;"De 50 ans à plus";"De 20 à 24 ans";81130.85217391305
+154;"F";"Commercial";"CDI";"TC";100;"Non";4152.6333;7;"Oui";"Oui";0;47;15.8;15;"De 40 à 49 ans";"De 15 à 19 ans";53319.811572000006
+155;"H";"Consultant";"CDI";"TC";100;"Non";4134.4333;22;"Non";"Non";0;38;22.8;22;"De 30 à 39 ans";"De 20 à 24 ans";60528.10351199999
+156;"F";"RH";"CDI";"TP";69;"Non";4117.36;8;"Oui";"Non";0;59;6.7;6;"De 50 ans à plus";"De 5 à 9 ans";77334.76173913044
+157;"F";"Marketing";"CDI";"TC";100;"Non";4082.8667;28;"Non";"Non";0;42;22.3;22;"De 40 à 49 ans";"De 20 à 24 ans";62712.83251200001
+158;"H";"Marketing";"CDI";"TC";100;"Non";4022.2;14;"Non";"Non";0;55;15.6;15;"De 50 ans à plus";"De 15 à 19 ans";55023.69600000001
+159;"F";"Compta Finances";"CDI";"TC";100;"Non";4013.1;12;"Non";"Non";0;35;8.1;8;"De 30 à 39 ans";"De 5 à 9 ans";53936.064
+160;"H";"Consultant";"CDI";"TC";100;"Non";4000.9667;40;"Oui";"Non";0;40;24.2;24;"De 40 à 49 ans";"De 20 à 24 ans";67216.24055999999
+161;"H";"Consultant";"CDI";"TC";100;"Non";3891.7667;32;"Non";"Non";0;56;7.2;7;"De 50 ans à plus";"De 5 à 9 ans";61645.58452800001
+162;"H";"RH";"CDI";"TC";100;"Oui";3882.6667;1;"Non";"Non";0;30;11.8;11;"De 30 à 39 ans";"De 10 à 14 ans";47057.920404000004
+163;"F";"Compta Finances";"CDI";"TP";69;"Oui";3853.2;9;"Oui";"Non";0;50;24.8;24;"De 50 ans à plus";"De 20 à 24 ans";73043.26956521739
+164;"F";"RH";"CDI";"TC";100;"Non";3835.65;26;"Non";"Non";0;53;14.9;14;"De 50 ans à plus";"De 10 à 14 ans";57995.028000000006
+165;"H";"RH";"CDI";"TC";100;"Non";3803.8;30;"Non";"Non";0;41;20.4;20;"De 40 à 49 ans";"De 20 à 24 ans";59339.280000000006
+166;"F";"Commercial";"CDI";"TC";100;"Oui";3800.7667;9;"Oui";"Non";0;56;24.7;24;"De 50 ans à plus";"De 20 à 24 ans";49714.028436
+167;"F";"RH";"CDI";"TC";100;"Non";3797.7333;24;"Non";"Non";0;50;23.9;23;"De 50 ans à plus";"De 20 à 24 ans";56510.271504000004
+168;"F";"RH";"CDI";"TC";100;"Non";3705.2167;29;"Oui";"Oui";0;45;13;13;"De 40 à 49 ans";"De 10 à 14 ans";57356.75451599999
+169;"H";"Marketing";"CDD";"TC";100;"Non";3693.0833;24;"Non";"Non";0;38;0.3;0;"De 30 à 39 ans";"De 0 à 4 ans";54953.079503999994
+170;"H";"Commercial";"CDI";"TC";100;"Oui";3677.9167;33;"Non";"Non";0;36;22.6;22;"De 30 à 39 ans";"De 20 à 24 ans";58699.55053200001
+171;"H";"Marketing";"CDI";"TC";100;"Non";3655.1667;33;"Non";"Non";0;63;19.3;19;"De 50 ans à plus";"De 15 à 19 ans";58336.46053200001
+172;"F";"Marketing";"CDD";"TC";100;"Non";3640;6;"Non";"Non";0;44;1.1;1;"De 40 à 49 ans";"De 0 à 4 ans";46300.8
+173;"F";"Marketing";"CDI";"TC";100;"Non";3597.5333;32;"Oui";"Non";0;38;16.8;16;"De 30 à 39 ans";"De 15 à 19 ans";56984.92747200001
+174;"H";"Marketing";"CDI";"TC";100;"Non";3582.3667;30;"Oui";"Non";0;45;22.4;22;"De 40 à 49 ans";"De 20 à 24 ans";55884.92052
+175;"F";"Consultant";"CDI";"TC";100;"Non";3547.4833;39;"Oui";"Non";1;26;11.7;11;"De 0 à 30 ans";"De 10 à 14 ans";59172.021444000005
+176;"H";"RH";"CDI";"TC";100;"Oui";3508.05;11;"Non";"Non";0;47;24;24;"De 40 à 49 ans";"De 20 à 24 ans";46727.22600000001
+177;"H";"RH";"CDI";"TC";100;"Non";3486.8167;19;"Non";"Non";0;29;3.1;3;"De 0 à 30 ans";"De 0 à 4 ans";49791.742476
+178;"H";"Marketing";"CDI";"TC";100;"Non";3462.55;3;"Oui";"Oui";0;39;20.6;20;"De 30 à 39 ans";"De 20 à 24 ans";42797.11800000001
+179;"F";"Consultant";"CDI";"TC";100;"Non";3459.5167;30;"Non";"Non";0;54;10.3;10;"De 50 ans à plus";"De 10 à 14 ans";53968.46052
+180;"H";"Compta Finances";"CDI";"TC";100;"Non";3436.7667;27;"Oui";"Non";0;35;10.3;10;"De 30 à 39 ans";"De 10 à 14 ans";52376.32450800001
+181;"H";"Compta Finances";"CDI";"TC";100;"Non";3383.6833;23;"Non";"Non";0;47;17.2;17;"De 40 à 49 ans";"De 15 à 19 ans";49943.16550799999
+182;"H";"RH";"CDI";"TC";100;"Non";3335.15;28;"Oui";"Non";0;53;7.5;7;"De 50 ans à plus";"De 5 à 9 ans";51227.904
+183;"F";"Commercial";"CDI";"TC";100;"Non";3260.8333;30;"Oui";"Non";0;34;17;17;"De 30 à 39 ans";"De 15 à 19 ans";50868.99948
+184;"F";"Marketing";"CDI";"TC";100;"Non";3256.2833;34;"Non";"Non";0;52;8.8;8;"De 50 ans à plus";"De 5 à 9 ans";52361.035464
+185;"H";"Consultant";"CDI";"TC";100;"Non";3232.0167;35;"Non";"Non";0;40;24.4;24;"De 40 à 49 ans";"De 20 à 24 ans";52358.67054
+186;"F";"RH";"CDI";"TC";100;"Non";3218.3667;27;"Oui";"Non";0;49;19.3;19;"De 40 à 49 ans";"De 15 à 19 ans";49047.908508
+187;"F";"Compta Finances";"CDD";"TC";100;"Non";3201.6833;38;"Non";"Non";0;25;0.8;0;"De 0 à 30 ans";"De 0 à 4 ans";53019.875447999984
+188;"F";"Commercial";"CDD";"TC";100;"Non";3185;3;"Non";"Non";0;44;1.7;1;"De 40 à 49 ans";"De 0 à 4 ans";39366.6
+189;"F";"Consultant";"CDD";"TC";100;"Non";3168.3167;10;"Non";"Non";0;44;1.4;1;"De 40 à 49 ans";"De 0 à 4 ans";41821.78044
+190;"F";"Commercial";"CDI";"TC";100;"Non";3165.2833;0;"Non";"Oui";0;57;6.8;6;"De 50 ans à plus";"De 5 à 9 ans";37983.399600000004
+191;"F";"RH";"CDI";"TP";69;"Non";3116.88;37;"Non";"Non";0;60;8.2;8;"De 50 ans à plus";"De 5 à 9 ans";74263.05391304349
+192;"F";"Consultant";"CDI";"TC";100;"Non";3097.0333;13;"Non";"Non";0;62;25;25;"De 50 ans à plus";"De 25 à 29 ans";41995.771548000004
+193;"F";"RH";"CDI";"TP";69;"Non";3060.72;6;"Non";"Non";0;49;19.5;19;"De 40 à 49 ans";"De 15 à 19 ans";56423.70782608695
+194;"F";"Consultant";"CDD";"TC";100;"Non";3033.3333;8;"Non";"Non";0;59;0.4;0;"De 50 ans à plus";"De 0 à 4 ans";39311.999568
+195;"F";"RH";"CDI";"TC";100;"Non";3012.1;19;"Oui";"Non";0;53;16.2;16;"De 50 ans à plus";"De 15 à 19 ans";43012.78799999999
+196;"H";"Marketing";"CDI";"TC";100;"Non";2998.45;21;"Oui";"Non";0;28;8.2;8;"De 0 à 30 ans";"De 5 à 9 ans";43537.49399999999
+197;"F";"Commercial";"CDI";"TC";100;"Oui";2928.6833;33;"Oui";"Oui";0;53;5.3;5;"De 50 ans à plus";"De 5 à 9 ans";46741.785468
+198;"H";"Consultant";"CDI";"TC";100;"Non";2918.0667;39;"Oui";"Non";0;46;21.2;21;"De 40 à 49 ans";"De 20 à 24 ans";48673.352556000005
+199;"F";"Commercial";"CDI";"TC";100;"Non";2916.55;35;"Oui";"Non";0;37;10.2;10;"De 30 à 39 ans";"De 10 à 14 ans";47248.11000000001
+200;"F";"Marketing";"CDI";"TC";100;"Oui";2912;35;"Non";"Non";0;55;4.2;4;"De 50 ans à plus";"De 0 à 4 ans";47174.4
+201;"F";"Commercial";"CDD";"TC";100;"Non";2881.6667;27;"Non";"Non";0;51;1.9;1;"De 50 ans à plus";"De 0 à 4 ans";43916.600508
+202;"H";"Informatique";"CDD";"TC";100;"Non";2848.3;15;"Oui";"Oui";0;32;3.3;3;"De 30 à 39 ans";"De 0 à 4 ans";39306.54
+203;"H";"Consultant";"CDI";"TC";100;"Non";2843.75;2;"Non";"Non";0;46;12.5;12;"De 40 à 49 ans";"De 10 à 14 ans";34807.5
+204;"H";"Consultant";"CDI";"TC";100;"Non";2834.65;15;"Oui";"Non";0;63;6.2;6;"De 50 ans à plus";"De 5 à 9 ans";39118.17
+205;"H";"Commercial";"CDI";"TC";100;"Non";2828.5833;21;"Non";"Non";0;49;24.2;24;"De 40 à 49 ans";"De 20 à 24 ans";41071.029515999995
+206;"H";"Consultant";"CDI";"TP";80;"Non";2813.72;8;"Oui";"Non";0;53;13.3;13;"De 50 ans à plus";"De 10 à 14 ans";45582.263999999996
+207;"H";"Consultant";"CDI";"TC";100;"Non";2777.0167;10;"Oui";"Non";0;56;23.5;23;"De 50 ans à plus";"De 20 à 24 ans";36656.620440000006
+208;"H";"Compta Finances";"CDI";"TC";100;"Non";2769.4333;33;"Non";"Oui";0;36;18.9;18;"De 30 à 39 ans";"De 15 à 19 ans";44200.155468000004
+209;"H";"RH";"CDI";"TC";100;"Non";2767.9167;6;"Oui";"Non";0;64;9.2;9;"De 50 ans à plus";"De 5 à 9 ans";35207.90042400001
+210;"H";"RH";"CDI";"TP";69;"Non";2735.2;27;"Non";"Non";0;55;21.2;21;"De 50 ans à plus";"De 20 à 24 ans";60412.24347826087
+211;"F";"Consultant";"CDI";"TC";100;"Non";2731.5167;4;"Oui";"Non";0;47;16.2;16;"De 40 à 49 ans";"De 15 à 19 ans";34089.328416000004
+212;"H";"Consultant";"CDI";"TC";100;"Non";2675.4;20;"Oui";"Non";0;52;3.4;3;"De 50 ans à plus";"De 0 à 4 ans";38525.76
+213;"H";"Compta Finances";"CDI";"TC";100;"Non";2604.1167;32;"Oui";"Non";0;59;20.5;20;"De 50 ans à plus";"De 20 à 24 ans";41249.208528
+214;"H";"Consultant";"CDI";"TC";100;"Non";2561.65;13;"Non";"Non";0;34;17.4;17;"De 30 à 39 ans";"De 15 à 19 ans";34735.974
+215;"H";"Consultant";"CDD";"TC";100;"Non";2558.6167;22;"Non";"Oui";0;36;1.8;1;"De 30 à 39 ans";"De 0 à 4 ans";37458.148488
+216;"H";"Commercial";"CDI";"TC";100;"Non";2511.6;21;"Non";"Oui";0;36;9.2;9;"De 30 à 39 ans";"De 5 à 9 ans";36468.43199999999
+217;"F";"RH";"CDI";"TP";69;"Oui";2507.44;18;"Oui";"Non";0;46;16.2;16;"De 40 à 49 ans";"De 15 à 19 ans";51457.02956521739
+218;"F";"Consultant";"CDD";"TP";91;"Non";2496;21;"Non";"Oui";0;48;1.3;1;"De 40 à 49 ans";"De 0 à 4 ans";39826.28571428571
+219;"F";"Marketing";"CDD";"TC";100;"Non";2426.6667;21;"Non";"Oui";0;48;0.6;0;"De 40 à 49 ans";"De 0 à 4 ans";35235.200484
+220;"H";"Commercial";"CDI";"TC";100;"Non";2396.3333;11;"Non";"Oui";0;47;21.6;21;"De 40 à 49 ans";"De 20 à 24 ans";31919.159556
+221;"F";"Commercial";"CDI";"TC";100;"Non";2369.0333;20;"Non";"Non";0;34;12.8;12;"De 30 à 39 ans";"De 10 à 14 ans";34114.07952
+222;"H";"Consultant";"CDD";"TP";91;"Non";2357.3333;12;"Non";"Non";0;49;1.2;1;"De 40 à 49 ans";"De 0 à 4 ans";34815.99950769231
+223;"F";"Commercial";"CDI";"TC";100;"Non";2309.8833;23;"Non";"Non";0;51;8.2;8;"De 50 ans à plus";"De 5 à 9 ans";34093.877508
+224;"F";"Consultant";"CDD";"TC";100;"Non";2226.4667;2;"Non";"Non";0;31;1.1;1;"De 30 à 39 ans";"De 0 à 4 ans";27251.952408
+225;"F";"Consultant";"CDI";"TC";100;"Oui";2132.4333;18;"Oui";"Non";0;45;3.2;3;"De 40 à 49 ans";"De 0 à 4 ans";30195.255527999998
+226;"F";"Compta Finances";"CDD";"TC";100;"Non";2123.3333;39;"Non";"Non";0;56;1.8;1;"De 50 ans à plus";"De 0 à 4 ans";35417.199444
+227;"F";"Compta Finances";"CDI";"TC";100;"Oui";2079.35;7;"Oui";"Oui";0;47;13.7;13;"De 40 à 49 ans";"De 10 à 14 ans";26698.854
+228;"F";"Consultant";"CDI";"TC";100;"Non";2073.2833;28;"Non";"Non";0;41;21.1;21;"De 40 à 49 ans";"De 20 à 24 ans";31845.631488000003
+229;"F";"Commercial";"CDI";"TC";100;"Non";2070.25;34;"Non";"Non";0;57;3.8;3;"De 50 ans à plus";"De 0 à 4 ans";33289.62
+230;"F";"Consultant";"CDI";"TC";100;"Non";2070.25;24;"Oui";"Non";1;24;9.3;9;"De 0 à 30 ans";"De 5 à 9 ans";30805.32
+231;"H";"Consultant";"CDI";"TP";69;"Non";2055.04;12;"Non";"Non";0;59;13.2;13;"De 50 ans à plus";"De 10 à 14 ans";40028.605217391305
+232;"F";"Compta Finances";"CDI";"TC";100;"Non";2052.05;13;"Non";"Non";0;28;5.3;5;"De 0 à 30 ans";"De 5 à 9 ans";27825.798
+233;"F";"Consultant";"CDI";"TC";100;"Non";2027.7833;19;"Non";"Non";0;35;6.6;6;"De 30 à 39 ans";"De 5 à 9 ans";28956.745523999998
+234;"H";"Consultant";"CDI";"TC";100;"Non";2024.75;4;"Oui";"Non";0;44;14.2;14;"De 40 à 49 ans";"De 10 à 14 ans";25268.879999999997
+235;"F";"Compta Finances";"CDI";"TC";100;"Non";2008.0667;35;"Oui";"Non";1;26;3.5;3;"De 0 à 30 ans";"De 0 à 4 ans";32530.68054
+236;"H";"Marketing";"CDD";"TC";100;"Non";1989.8667;5;"Non";"Non";0;35;1.4;1;"De 30 à 39 ans";"De 0 à 4 ans";25072.32042
+237;"H";"Compta Finances";"CDI";"TC";100;"Non";1979.25;6;"Oui";"Non";0;39;5.5;5;"De 30 à 39 ans";"De 5 à 9 ans";25176.06
+238;"F";"Compta Finances";"CDD";"TC";100;"Non";1920.1;17;"Oui";"Non";1;30;1.1;1;"De 30 à 39 ans";"De 0 à 4 ans";26958.203999999998
+239;"H";"Consultant";"CDI";"TC";100;"Non";1873.0833;27;"Non";"Non";0;46;12.2;12;"De 40 à 49 ans";"De 10 à 14 ans";28545.789492
+240;"F";"Marketing";"CDI";"TC";100;"Non";1863.9833;12;"Oui";"Non";1;32;2.5;2;"De 30 à 39 ans";"De 0 à 4 ans";25051.935552
+241;"H";"Consultant";"CDI";"TP";80;"Non";1851.5467;19;"Non";"Non";0;43;23.7;23;"De 40 à 49 ans";"De 20 à 24 ans";33050.108595
+242;"H";"Compta Finances";"CDI";"TC";100;"Non";1835.1667;6;"Non";"Non";0;36;19;19;"De 30 à 39 ans";"De 15 à 19 ans";23343.320424
+243;"H";"Compta Finances";"CDI";"TC";100;"Oui";1833.65;8;"Non";"Non";0;53;8.2;8;"De 50 ans à plus";"De 5 à 9 ans";23764.104000000003
+244;"H";"Consultant";"CDI";"TC";100;"Non";1803.3167;8;"Oui";"Non";0;31;4.4;4;"De 30 à 39 ans";"De 0 à 4 ans";23370.984432000005
+245;"F";"Consultant";"CDI";"TC";100;"Non";1774.5;16;"Oui";"Non";0;47;5.5;5;"De 40 à 49 ans";"De 5 à 9 ans";24701.039999999997
+246;"H";"Compta Finances";"CDI";"TC";100;"Oui";1772.9833;20;"Oui";"Non";0;50;16.4;16;"De 50 ans à plus";"De 15 à 19 ans";25530.959519999997
+247;"H";"Consultant";"CDI";"TP";69;"Oui";1709.76;10;"Oui";"Non";0;49;10.3;10;"De 40 à 49 ans";"De 10 à 14 ans";32708.452173913047
+248;"F";"Consultant";"CDI";"TC";100;"Non";1703.2167;39;"Oui";"Non";0;46;5.7;5;"De 40 à 49 ans";"De 5 à 9 ans";28409.654556000005
+249;"H";"Consultant";"CDI";"TC";100;"Non";1697.15;17;"Oui";"Non";0;52;21.7;21;"De 50 ans à plus";"De 20 à 24 ans";23827.986
+250;"H";"Marketing";"CDI";"TC";100;"Non";1669.85;22;"Oui";"Non";0;26;12.4;12;"De 0 à 30 ans";"De 10 à 14 ans";24446.603999999996
+251;"H";"Consultant";"CDI";"TC";100;"Non";1651.65;18;"Non";"Non";0;39;17.1;17;"De 30 à 39 ans";"De 15 à 19 ans";23387.364
+252;"F";"Marketing";"CDI";"TC";100;"Oui";1598.5667;18;"Non";"Non";0;32;14;14;"De 30 à 39 ans";"De 10 à 14 ans";22635.704471999998
+253;"H";"Commercial";"CDI";"TC";100;"Oui";1590.9833;30;"Oui";"Non";0;44;14.9;14;"De 40 à 49 ans";"De 10 à 14 ans";24819.339480000002
+254;"H";"Consultant";"CDI";"TP";69;"Non";1110.72;14;"Oui";"Non";0;49;6.3;6;"De 40 à 49 ans";"De 5 à 9 ans";22021.231304347828
+255;"F";"Compta Finances";"CDI";"TP";69;"Oui";1059.76;1;"Non";"Non";0;33;11.9;11;"De 30 à 39 ans";"De 10 à 14 ans";18614.9147826087
