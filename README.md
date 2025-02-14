@@ -137,3 +137,26 @@ Après avoir établi le Product Strategy Canvas sur la base de la note de cadrag
 
 ### &#127919; Objectifs
 * Produire un reporting en analysant les visualisations pour faciliter les décisions.
+
+## [Projet 6 : Optimisez la gestion des données d'une boutique avec Python](./Optimiser_la_gestion_des_donnees/)
+
+### &#127891; Compétences acquises
+* Utiliser différentes librairies de Python.
+* Effectuer des analyses exploratoires de fichiers.
+* Travailler avec un notebook.
+* Effectuer des jonctions de fichiers.
+* Effectuer des analyses univariées.
+
+### &#128203; Scénario
+Nous venons de commencer notre mission en tant qu'analyste chez *BottleNeck*, un marchand de vin prestigieux.  
+Les outils de gestion et d'analyse sont artisanaux et la direction a du mal à analyser les données et la gestion des stocks est complexe.
+
+Notre mission se décomposera en 3 phases :  
+* Phase 1 : Agréger les différents fichiers afin de pouvoir exploiter les données.
+* Phase 2 : Analyser les données pour le CODIR.
+* Phase 3 : Savoir s'il y a une corrélation entre certaines données quantitatives (prix, prix d’achat, stock, ventes, prix HT et taux de marge, etc.).
+
+### &#127919; Objectifs
+* Effectuer des analyses univariées et multivariées des données pré-traitées.
+* Pré-traiter des données pour explorer et comprendre leurs caractéristiques.
+* Traiter, nettoyer des données et définir la gestion des incohérences en conformité du *[RGPD](https://www.cnil.fr/fr/cnil-direct/question/quels-sont-les-grands-principes-des-regles-de-protection-des-donnees?visiteur=part)*.
