@@ -160,3 +160,25 @@ Notre mission se décomposera en 3 phases :
 * Effectuer des analyses univariées et multivariées des données pré-traitées.
 * Pré-traiter des données pour explorer et comprendre leurs caractéristiques.
 * Traiter, nettoyer des données et définir la gestion des incohérences en conformité du *[RGPD](https://www.cnil.fr/fr/cnil-direct/question/quels-sont-les-grands-principes-des-regles-de-protection-des-donnees?visiteur=part)*.
+
+## [Projet 5 : Créez et utilisez une base de données immobilières avec SQL](./Creer_utiliser_BDD_SQL/)
+
+### &#127891; Compétences acquises
+* Approfondir ses compétences en création de bases de données,
+  importation de données et requêtage SQL
+
+### &#128203; Scénario
+Nous sommes Data Analyst chez **Laplace Immo**, un réseau national d’agences immobilières. Le directeur général est sensible depuis quelque temps à l’importance des données.  
+La responsable du projet vous a confié la modification de la base de données permettant de collecter les transactions immobilières et foncières en France.
+
+Notre mission consiste à :  
+* Préparer le dictionnaire des données.
+* Modifier le schéma relationnel pour qu’il prenne en compte les nouvelles données région et population.
+
+puis après validation :
+* Requêter notre BDD SQL pour répondre aux besoins en analyse des données, selon le compte-rendu de réunion de validation.
+
+### &#127919; Objectifs
+* Créer une base de données en respect des normes réglementaires et des besoins clients.
+* Effectuer des requêtes SQL pour répondre à une problématique métier en respect du *[RGPD](https://www.cnil.fr/fr/cnil-direct/question/quels-sont-les-grands-principes-des-regles-de-protection-des-donnees?visiteur=part)*.
+* Gérer une base de données établissant des requêtes et en respect du *[RGPD](https://www.cnil.fr/fr/cnil-direct/question/quels-sont-les-grands-principes-des-regles-de-protection-des-donnees?visiteur=part)*.
