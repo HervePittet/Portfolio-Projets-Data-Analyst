@@ -107,7 +107,7 @@ Nous sommes data analyst dans un cabinet de consultants spécialisé dans la tra
 Notre cabinet, entreprise d'au moins 50 salariés, à l'obligation de calculer et publier sur son site Internet son index de l’égalité femmes-hommes.
 
 Notre mission est de préparer :
-* Un workflow avec le logiciel KNIME qui crée les graphiques du diagnostic;
+* Un workflow avec le logiciel KNIME qui crée les graphiques du diagnostic,
 * un fichier .csv prêt pour être utilisé dans nos futures analyses via Tableau Software.  
 
 Nous nous baserons sur les données issues du SIRH non anonymisées. Il faudra les traiter en respect du *[RGPD](https://www.cnil.fr/fr/cnil-direct/question/quels-sont-les-grands-principes-des-regles-de-protection-des-donnees?visiteur=part)*.
