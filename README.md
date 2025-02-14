@@ -102,7 +102,7 @@ Cette analyse va être découpée en deux parties :
 * Utiliser Knime.
 
 ### &#128203; Scénario
-Nous sommes data analyst dans un cabinet de consultants spécialisé dans la transformation digitale des entreprises qui compte déjà plus de 150 salariés et est en plein développement..  
+Nous sommes data analyst dans un cabinet de consultants spécialisé dans la transformation digitale des entreprises qui compte déjà plus de 150 salariés et est en plein développement.    
 
 Notre cabinet, entreprise d'au moins 50 salariés, à l'obligation de calculer et publier sur son site Internet son index de l’égalité femmes-hommes.
 
@@ -116,3 +116,24 @@ Nous nous baserons sur les données issues du SIRH non anonymisées. Il faudra l
 * Agréger des extractions de données en définissant les règles de nettoyage.
 * Collecter des données pertinentes en respect des normes et bonnes pratiques.
 * Vérifier la cohérence et la fiabilité des données préparées.
+
+## [Projet 7 : Créez un tableau de bord dynamique avec Power BI pour visualiser l'avancement de projets](./Analyser_tableau_de_bord_avancement_projets/)
+
+### &#127891; Compétences acquises
+* Identifier les enjeux du client.
+* Collecter les user stories.
+* Prépararer et transformer les données.
+* Développer des visualisations et les présenter au client.
+
+### &#128203; Scénario
+En tant que consultant Data Analyst chez ESN Data, nous sommes déployé chez notre client Sanitoral pour réaliser un mission de visualisation de données.
+
+La cheffe de projet chez Sanitoral a besoin d'un tableau de bord pour :
+* suivre l'avancement des projets et les coûts,
+* identifier les retards,
+* contrôler les performances, afin que l'équipe puisse mener les actions adéquates.
+
+Après avoir établi le Product Strategy Canvas sur la base de la note de cadrage, nous pouvons réaliser notre mission selon les besoins de la cheffe de projet.
+
+### &#127919; Objectifs
+* Produire un reporting en analysant les visualisations pour faciliter les décisions.
