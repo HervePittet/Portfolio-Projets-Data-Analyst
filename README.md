@@ -42,7 +42,7 @@ Pour la partie analytique, nous réaliserons une ACP avec réductions des dimens
 * Réduire la dimension du jeu de données pour optimiser le temps d'apprentissage des modèles.
 * Sélectionner les variables pertinentes d'un modèle d'apprentissage.
 
-## [Projet 10 : Faîtes une étude sur l'eau potable avec Power BI](./Faire_etude_eau_potable/)
+## [Projet 10 : Faîtes une étude sur l'eau potable avec Power BI](./Etude_eau_potable/)
 
 ### &#127891; Compétences acquises
 * La prise en compte des enjeux contextuels / de la démarche de datavisualisation.
