@@ -182,3 +182,20 @@ puis après validation :
 * Créer une base de données en respect des normes réglementaires et des besoins clients.
 * Effectuer des requêtes SQL pour répondre à une problématique métier en respect du *[RGPD](https://www.cnil.fr/fr/cnil-direct/question/quels-sont-les-grands-principes-des-regles-de-protection-des-donnees?visiteur=part)*.
 * Gérer une base de données établissant des requêtes et en respect du *[RGPD](https://www.cnil.fr/fr/cnil-direct/question/quels-sont-les-grands-principes-des-regles-de-protection-des-donnees?visiteur=part)*.
+
+## [Projet 4 : Réalisez une étude de santé publique avec R ou Python](./Realiser_etude_sante_publique/)
+
+### &#127891; Compétences acquises
+* Utiliser un langage de programmation comme Python
+* Apprendre à travailler avec un Notebook
+  
+### &#128203; Scénario
+Nous venons d'intégrer la **[Food and Agriculture Organization of the United Nations (FAO)](https://www.fao.org/home/fr/)** en tant que Data Analyst.  
+Notre équipe vient de se voir confier la réalisation d’une étude de grande ampleur sur le thème de l’alimentation et plus particulièrement sur la sous-nutrition dans le monde.  
+Les données de 2018 à maintenant ont déjà été traitées par notre prédécesseur.  
+
+Notre mission consiste à :  
+* Compléter les analyses à réaliser pour la partie "historique" avec les données allant de 2013 à 2017.
+
+### &#127919; Objectifs
+* Explorer et analyser des données en utilisant des langages et outils métiers.
