@@ -186,8 +186,8 @@ puis après validation :
 ## [Projet 4 : Réalisez une étude de santé publique avec R ou Python](./Realiser_etude_sante_publique/)
 
 ### &#127891; Compétences acquises
-* Utiliser un langage de programmation comme Python
-* Apprendre à travailler avec un Notebook
+* Utiliser un langage de programmation comme Python.
+* Apprendre à travailler avec un Notebook.
   
 ### &#128203; Scénario
 Nous venons d'intégrer la **[Food and Agriculture Organization of the United Nations (FAO)](https://www.fao.org/home/fr/)** en tant que Data Analyst.  
@@ -199,3 +199,17 @@ Notre mission consiste à :
 
 ### &#127919; Objectifs
 * Explorer et analyser des données en utilisant des langages et outils métiers.
+
+## [Projet 3 : Requêtez une base de données avec SQL](./Requeter_BDD_SQL/)
+
+### &#127891; Compétences acquises
+* Découvrir la création et la gestion de bases de données.
+* Acquisition des fondamentaux du métier de *Data Analyst*.
+  
+### &#128203; Scénario
+Ce projet n'est pas scénarisé, il s'agit uniquement d'exercices d'entraînement.
+
+### &#127919; Objectifs
+* Charger des données dans une base de données.
+* Créer un shéma d'une base de données.
+* Rédiger des scripts simples en SQL pour aider à la prise de décision business.
