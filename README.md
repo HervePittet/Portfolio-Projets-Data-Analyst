@@ -4,9 +4,9 @@ Ce dépôt contient les projets réalisés dans le cadre de mon parcours de form
 ## &#128295; Outils utilisés
 |                   |Projet 12 |Projet 11 |Projet 10 |Projet 9 |Projet 8 |Projet 7 |Projet 6 |Projet 5 |Projet 4 |Projet 3 |Projet 2 |
 |:-----------------:|:--------:|:--------:|:--------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-|Python             |          |          |          |         |         |         |         |         |         |         |         |
-|Jupyter            |          |&#10003;  |          |         |         |         |         |         |         |         |         |
-|Pandas             |          |&#10003;  |          |         |         |         |         |         |         |         |         |
+|Python             |          |&#10003;  |          |         |         |         |         |         |&#10003; |         |         |
+|Jupyter            |          |&#10003;  |          |         |         |         |         |         |&#10003; |         |         |
+|Pandas             |          |&#10003;  |          |         |         |         |         |         |&#10003; |         |         |
 |Numpy              |          |&#10003;  |          |         |         |         |         |         |         |         |         |
 |Matplotlib         |          |&#10003;  |          |         |         |         |         |         |         |         |         |
 |Seaborn            |          |&#10003;  |          |         |         |         |         |         |         |         |         |
@@ -16,10 +16,10 @@ Ce dépôt contient les projets réalisés dans le cadre de mon parcours de form
 |Power BI           |          |          |&#10003;  |         |         |&#10003; |         |         |         |         |         |
 |Power Query        |          |          |&#10003;  |         |         |&#10003; |         |         |         |         |         |
 |Knime              |          |          |          |         |&#10003; |         |         |         |         |         |         |
-|SQLite             |          |          |          |         |         |         |         |         |         |         |         |
-|SQL Power Architect|          |          |          |         |         |         |         |         |         |         |         |
+|SQLite             |          |          |          |         |         |         |         |&#10003; |         |&#10003; |         |
+|SQL Power Architect|          |          |          |         |         |         |         |&#10003; |         |&#10003; |         |
 |Power Point        |&#10003;  |&#10003;  |&#10003;  |&#10003; |&#10003; |&#10003; |&#10003; |&#10003; |&#10003; |&#10003; |&#10003; |
-|Excel              |          |          |          |         |         |         |         |         |         |         |         |
+|Excel              |          |          |          |         |         |         |         |         |         |         |&#10003; |
 
 ## [Projet 11 : Produisez une étude de marché avec Python - En cours](./Produire_etude_de_marche/)
 
