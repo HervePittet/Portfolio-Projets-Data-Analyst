@@ -183,7 +183,7 @@ puis après validation :
 * Effectuer des requêtes SQL pour répondre à une problématique métier en respect du *[RGPD](https://www.cnil.fr/fr/cnil-direct/question/quels-sont-les-grands-principes-des-regles-de-protection-des-donnees?visiteur=part)*.
 * Gérer une base de données établissant des requêtes et en respect du *[RGPD](https://www.cnil.fr/fr/cnil-direct/question/quels-sont-les-grands-principes-des-regles-de-protection-des-donnees?visiteur=part)*.
 
-## [Projet 4 : Réalisez une étude de santé publique avec R ou Python](./Realiser_etude_sante_publique/)
+## [Projet 4 : Réalisez une étude de santé publique avec Python](./Realiser_etude_sante_publique/)
 
 ### &#127891; Compétences acquises
 * Utiliser un langage de programmation comme Python.
