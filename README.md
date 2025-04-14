@@ -126,7 +126,7 @@ Nous nous baserons sur les données issues du SIRH non anonymisées. Il faudra l
 * Développer des visualisations et les présenter au client.
 
 ### &#128203; Scénario
-En tant que consultant Data Analyst chez **ESN Data**, nous sommes déployé chez notre client Sanitoral pour réaliser un mission de visualisation de données.
+En tant que consultant Data Analyst chez **ESN Data**, nous sommes déployé chez notre client Sanitoral pour réaliser une mission de visualisation de données.
 
 La cheffe de projet chez Sanitoral a besoin d'un tableau de bord pour :
 * suivre l'avancement des projets et les coûts,
