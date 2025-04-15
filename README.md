@@ -21,7 +21,7 @@ Ce dépôt contient les projets réalisés dans le cadre de mon parcours de form
 |Power Point        |&#10003;  |&#10003;  |&#10003;  |&#10003; |&#10003; |&#10003; |&#10003; |&#10003; |&#10003; |&#10003; |&#10003; |
 |Excel              |          |          |          |         |         |         |         |         |         |         |&#10003; |
 
-## [Projet 11 : Produisez une étude de marché avec Python - En cours](./Produire_etude_de_marche/)
+## [Projet 11 : Produisez une étude de marché avec Python](./Produire_etude_de_marche/)
 
 ### &#127891; Compétences acquises
 * Travailler de façon itérative.
