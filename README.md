@@ -4,15 +4,16 @@ Ce dépôt contient les projets réalisés dans le cadre de mon parcours de form
 ## &#128295; Outils utilisés
 |                   |Projet 12 |Projet 11 |Projet 10 |Projet 9 |Projet 8 |Projet 7 |Projet 6 |Projet 5 |Projet 4 |Projet 3 |
 |:-----------------:|:--------:|:--------:|:--------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-|Python             |          |&#10003;  |          |&#10003; |         |         |&#10003; |         |&#10003; |         |
-|Jupyter            |          |&#10003;  |          |&#10003; |         |         |&#10003; |         |&#10003; |         |
-|Pandas             |          |&#10003;  |          |&#10003; |         |         |&#10003; |         |&#10003; |         |
-|Numpy              |          |&#10003;  |          |&#10003; |         |         |&#10003; |         |         |         |
-|Matplotlib         |          |&#10003;  |          |&#10003; |         |         |         |         |         |         |
-|Seaborn            |          |&#10003;  |          |&#10003; |         |         |         |         |         |         |
-|Plotly             |          |&#10003;  |          |&#10003; |         |         |         |         |         |         |
-|Scipy              |          |          |          |&#10003; |         |         |         |         |         |         |
-|Sklearn            |          |          |          |&#10003; |         |         |         |         |         |         |
+|Python             |&#10003;  |&#10003;  |          |&#10003; |         |         |&#10003; |         |&#10003; |         |
+|Jupyter            |&#10003;  |&#10003;  |          |&#10003; |         |         |&#10003; |         |&#10003; |         |
+|Pandas             |&#10003;  |&#10003;  |          |&#10003; |         |         |&#10003; |         |&#10003; |         |
+|Numpy              |&#10003;  |&#10003;  |          |&#10003; |         |         |&#10003; |         |         |         |
+|Matplotlib         |&#10003;  |&#10003;  |          |&#10003; |         |         |         |         |         |         |
+|Seaborn            |&#10003;  |&#10003;  |          |&#10003; |         |         |         |         |         |         |
+|Plotly             |&#10003;  |&#10003;  |          |&#10003; |         |         |         |         |         |         |
+|Scipy              |&#10003;  |&#10003;  |          |&#10003; |         |         |         |         |         |         |
+|Scikit-learn       |&#10003;  |&#10003;  |          |&#10003; |         |         |         |         |         |         |
+|Statsmodels        |&#10003;  |          |          |         |         |         |         |         |         |         |
 |Power BI           |          |          |&#10003;  |         |         |&#10003; |         |         |         |         |
 |Power Query        |          |          |&#10003;  |         |         |&#10003; |         |         |         |         |
 |Knime              |          |          |          |         |&#10003; |         |         |         |         |         |
@@ -21,6 +22,25 @@ Ce dépôt contient les projets réalisés dans le cadre de mon parcours de form
 |Power Point        |&#10003;  |&#10003;  |&#10003;  |&#10003; |&#10003; |&#10003; |&#10003; |&#10003; |&#10003; |&#10003; |
 
 
+## [Projet 12 : Détectez des faux billets avec Python](./Détecter_faux_billets/)
+
+### &#127891; Compétences acquises
+* Découvrir de nombreuses notions en modélisation.
+* Apprendre à créer un algorithme.
+* Comparer différents modèles d'apprentissage supervisés et non supervisés.
+
+### &#128203; Scénario
+En tant que senior data analyst auprès de **ONCFM** (*Organisation nationale de lutte contre le faux-monnayage*), nous avons pour mission de mettre en place différents algorithmes de détection  
+des faux billets basés sur les données géométriques des billets. Après avoir analyser et nettoyer les données, nous devons testé les algorithmes suivants :  
+* K-means
+* Régression logistique
+* KNN
+* Random Forest
+
+### &#127919; Objectifs
+* Utiliser un modèle d'apprentissage supervisé pour réaliser une prédiction d'un phénomène.
+* Entraîner un modèle d'apprentissage non supervisé pour exploiter le modèle.
+  
 ## [Projet 11 : Produisez une étude de marché avec Python](./Produire_etude_de_marche/)
 
 ### &#127891; Compétences acquises
