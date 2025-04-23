@@ -22,7 +22,7 @@ Ce dépôt contient les projets réalisés dans le cadre de mon parcours de form
 |Power Point        |&#10003;  |&#10003;  |&#10003;  |&#10003; |&#10003; |&#10003; |&#10003; |&#10003; |&#10003; |&#10003; |
 
 
-## [Projet 12 : Détectez des faux billets avec Python](./Détecter_faux_billets/)
+## [Projet 12 : Détectez des faux billets avec Python](./Detecter_faux_billets/)
 
 ### &#127891; Compétences acquises
 * Découvrir de nombreuses notions en modélisation.
