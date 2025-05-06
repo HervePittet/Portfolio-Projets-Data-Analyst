@@ -30,8 +30,7 @@ Ce dépôt contient les projets réalisés dans le cadre de mon parcours de form
 
 ### &#128203; Scénario
 En tant qu'expert data chez **ESN**, une mission avec le profil de data analyst chef de projet expérimenté vous est proposée dans une entreprise spécalisée dans l'aéronautique.  
-Cette entreprise **Aéroworld** souhaite analyser les portfolios des candidats avant de les rencontrer en entretien; elle a donc édité un cahier des charges des documents  
-à produire et qui mettront en avant la maîtrise du candidat :  
+Cette entreprise **Aéroworld** souhaite analyser les portfolios des candidats avant de les rencontrer en entretien; elle a donc édité un cahier des charges des documents à produire et qui mettront en avant la maîtrise du candidat :  
 * Effectuer une veille métier et technologique  
 * Identifier les besoins métier  
 * Formaliser un cahier des charges fonctionnel pour cadrer les besoins et les solutions  
