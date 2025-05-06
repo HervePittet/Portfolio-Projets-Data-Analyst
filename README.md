@@ -25,21 +25,30 @@ Ce dépôt contient les projets réalisés dans le cadre de mon parcours de form
 ## [Projet 13 : Créez votre portfolio de professionnel de la data](./Aeroworld/)
 
 ### &#127891; Compétences acquises
-* Découvrir de nombreuses notions en modélisation.
-* Apprendre à créer un algorithme.
-* Comparer différents modèles d'apprentissage supervisés et non supervisés.
+* Gérer un projet.
+* Mettre ses compétences en valeur.
 
 ### &#128203; Scénario
-En tant que senior data analyst auprès de **ONCFM** (*Organisation nationale de lutte contre le faux-monnayage*), nous avons pour mission de mettre en place différents algorithmes de détection  
-des faux billets basés sur les données géométriques des billets. Après avoir analyser et nettoyer les données, nous devons testé les algorithmes suivants :  
-* K-means
-* Régression logistique
-* KNN
-* Random Forest
+En tant qu'expert data chez **ESN**, une mission avec le profil de data analyst chef de projet expérimenté vous est proposée dans une entreprise spécalisée dans l'aéronautique.  
+Cette entreprise **Aéroworld** souhaite analyser les portfolios des candidats avant de les rencontrer en entretien; elle a donc édité un cahier des charges des documents  
+à produire et qui mettront en avant la maîtrise du candidat :  
+* Effectuer une veille métier et technologique  
+* Identifier les besoins métier  
+* Formaliser un cahier des charges fonctionnel pour cadrer les besoins et les solutions  
+* Organiser un projet d'analyse data grâce à des outils de gestion de projet  
+* Accompagner les équipes sur la prise en main des outils  
+* Formaliser les procédures de documentation pour assurer une gestion fiable
+* Adapter sa posture de professionnel en se positionnant comme consultant afin de challenger les besoins et répondre à la demande  
 
 ### &#127919; Objectifs
-* Utiliser un modèle d'apprentissage supervisé pour réaliser une prédiction d'un phénomène.
-* Entraîner un modèle d'apprentissage non supervisé pour exploiter le modèle.
+* Accompagner les équipes sur la prise en main des outils.
+* Adapter sa posture de professionnel en se positionnant comme consultant.
+* Effectuer une veille métier et technologique.
+* Expérimenter de nouvelles méthodes d'analyse de données à travers des recherches.
+* Formaliser les procédures de documentation pour assurer une gestion fiable.
+* Formaliser un cahier des charges fonctionnel pour cadrer les besoins et les solutions.
+* Identifier les besoins métier en intégrant les différentes contraintes.
+* Organiser un projet d'analyse data grâce à des outils de gestion de projet.
 
 ## [Projet 12 : Détectez des faux billets avec Python](./Detecter_faux_billets/)
 
