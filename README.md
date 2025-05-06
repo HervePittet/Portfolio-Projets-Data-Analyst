@@ -22,6 +22,25 @@ Ce dépôt contient les projets réalisés dans le cadre de mon parcours de form
 |Power Point        |&#10003;  |&#10003;  |&#10003;  |&#10003; |&#10003; |&#10003; |&#10003; |&#10003; |&#10003; |&#10003; |
 
 
+## [Projet 13 : Créez votre portfolio de professionnel de lad ata](./Portfolio_Aeroworld/)
+
+### &#127891; Compétences acquises
+* Découvrir de nombreuses notions en modélisation.
+* Apprendre à créer un algorithme.
+* Comparer différents modèles d'apprentissage supervisés et non supervisés.
+
+### &#128203; Scénario
+En tant que senior data analyst auprès de **ONCFM** (*Organisation nationale de lutte contre le faux-monnayage*), nous avons pour mission de mettre en place différents algorithmes de détection  
+des faux billets basés sur les données géométriques des billets. Après avoir analyser et nettoyer les données, nous devons testé les algorithmes suivants :  
+* K-means
+* Régression logistique
+* KNN
+* Random Forest
+
+### &#127919; Objectifs
+* Utiliser un modèle d'apprentissage supervisé pour réaliser une prédiction d'un phénomène.
+* Entraîner un modèle d'apprentissage non supervisé pour exploiter le modèle.
+
 ## [Projet 12 : Détectez des faux billets avec Python](./Detecter_faux_billets/)
 
 ### &#127891; Compétences acquises
