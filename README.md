@@ -22,7 +22,7 @@ Ce dépôt contient les projets réalisés dans le cadre de mon parcours de form
 |Power Point        |&#10003;  |&#10003;  |&#10003;  |&#10003; |&#10003; |&#10003; |&#10003; |&#10003; |&#10003; |&#10003; |
 
 
-## [Projet 13 : Créez votre portfolio de professionnel de lad ata](./Portfolio_Aeroworld/)
+## [Projet 13 : Créez votre portfolio de professionnel de lad ata](./Aeroworld/)
 
 ### &#127891; Compétences acquises
 * Découvrir de nombreuses notions en modélisation.
